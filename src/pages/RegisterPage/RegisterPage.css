@@ -1,0 +1,99 @@
+.Register {
+    display:flex;
+    width: 100%;
+    width: 160px;
+    height: 284px;
+    background-color: #ffffff;
+  }
+.Facebook-login-bar-1 {
+    
+    width: 50%;
+  height: 284px;
+  padding: 12px 0x 41px 0;
+  background-color: #a4a4a4;
+  }
+  .Facebook-login-bar-2 {
+    
+    width: 50%;
+  height: 284px;
+  margin: 0px 0 0;
+  padding: 8px 0px 44px 12px;
+  background-color: #e3e7eb;
+  }
+
+  .form-reg-1 {
+    
+    width: 93px;
+    height: 134px;
+    margin: 30px 33.6px 44px 33.4px;
+    padding: 4px 0 3.5px 4px;
+    opacity: 0.9;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
+  label {
+    width: 33px;
+    height: 6px;
+    opacity: 0.9;
+    font-family: Mulish;
+    font-size: 6px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.75px;
+    text-align: left;
+    color: #323f4b;
+  }
+
+  .Vezapp-Button-Login {
+    top:0;
+    width: 113px;
+    height: 20px;
+    margin: 44px 23.5px 20px;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+  }
+  .Login {
+    width: 113px;
+    height: 7px;
+    margin: 50.3px 23.5px 26.8px 23.5px;
+    font-family: Mulish;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.63px;
+    text-align: center;
+    color: #7b8794;
+  }
+  .elige-perfil-1 {
+    width: 60px;
+    height: 8px;
+    margin: 164px 0 59px 10px;
+    font-family: Mulish;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.63px;
+    text-align: left;
+    color: #000000;
+  }
+  .Elige-perfil-2 {
+    width: 64px;
+    height: 8px;
+    margin: 168px 4px 56px 0;
+    font-family: Mulish;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.63px;
+    text-align: left;
+    color: #000000;
+  }

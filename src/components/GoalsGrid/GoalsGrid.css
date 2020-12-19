@@ -1,0 +1,28 @@
+
+.Frame-2 {
+    width: 118px;
+    height: 22px;
+    margin: 0 0 2px;
+    padding: 0 4px;
+  }
+  .Vezappgoal {
+    width: 118px;
+    height: 22px;
+    margin: 0 0 2px;
+    padding: 0 4px;
+    background-color: #f5f7fa;
+  }
+  .Short-description {
+    width: 62px;
+    height: 10px;
+    margin: 12px 0 0;
+    font-family: Mulish;
+    font-size: 8px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7b8794;
+  }

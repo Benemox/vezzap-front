@@ -1,0 +1,24 @@
+.rectangle-33 {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: solid 0.3px #323f4b;
+  }
+
+  .aceptation-p {
+    width: 86.1px;
+    height: 9px;
+    margin: 3.5px 0 3.5px 4px;
+    font-family: Mulish;
+    font-size: 7.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.08px;
+    text-align: center;
+    color: #323f4b;
+  }
+  .new-policy-page{
+      display: flex;
+  }
