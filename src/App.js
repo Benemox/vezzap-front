@@ -16,6 +16,7 @@ function App() {
           <Route path="/register" component={RegisterPage} />
           <Route path="/dasboard" component={Dasboard}/>
           <Route path="/Scan" component={Scan}/>
+          
         </Switch>
       </Router> 
     </div>
