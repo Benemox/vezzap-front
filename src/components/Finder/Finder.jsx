@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './finder.css';
+import './Finder.css';
 
 class Finder extends Component {
   constructor(props) {
