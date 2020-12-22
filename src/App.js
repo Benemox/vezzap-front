@@ -5,6 +5,7 @@ import NewPolicyPage from "./pages/NewPolicyPage/NewPolicyPage"
 import RegisterPage from "./pages/RegisterPage/RegisterPage"
 import Dasboard from "./pages/Dasboard/Dasboard"
 import Scan from "./pages/Scan/Scan"
+import Search from "./pages/Search/Search"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/register" component={RegisterPage} />
           <Route path="/dasboard" component={Dasboard}/>
           <Route path="/Scan" component={Scan}/>
+          <Route path="/Search" component={Search} />
           
         </Switch>
       </Router> 
