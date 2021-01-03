@@ -40,7 +40,8 @@ function WebcamScreenShot() {
         width: { min: 480 },
         height: { min: 720 },
         aspectRatio: 0.6666666667
-      };
+      }
+      ;
       
       
        
@@ -48,21 +49,19 @@ function WebcamScreenShot() {
     return (
       <div>
           <div>
-             <Link to="/Dasboard" className="Size"><button>{but}</button></Link>
              <p className="Frame-2">ScreenShot</p>
-             <img src="" alt="" className="Ellipse-1"/>
           </div>
-         {/* <Webcam 
+         <Webcam 
           videoConstraints={videoConstraints} 
           width={48} 
           height={72}
-         /> */}
+         />
+         <button onClick={WebcamScreenShot}>Capturar</button>
       </div>
     );
   }
   
-  export default WebcamScreenShot;
-
+  export default  WebcamScreenShot
 
 
 

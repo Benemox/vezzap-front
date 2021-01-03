@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import "./Scan.css"
 import QrReader from "../../components/QrReader/QrReader"
-import  BarCodeReader from "../../components/BarCodeReader/BarCodeReader"
+import  Barcode from "../../components/BarCodeReader/BarCodeReader"
 import WebcamScreenShot from  "../../components/webcamScreenShot/ScreenShot"
 
 function Scan() {
@@ -17,10 +17,14 @@ function Scan() {
              <Link to="/Dasboard" className="Size"><button>{but}</button></Link>
              <p className="Frame-2">Escaner</p>
              <img src="" alt="" className="Ellipse-1"/>
+             <br/>
           </div>
-          <QrReader/>
-         < BarCodeReader/>
-         <WebcamScreenShot/>
+          <br/>
+          <br/> 
+          {/* <WebcamScreenShot/> */}
+          {/* <QrReader/> */}
+        <Barcode/>
+        
       </div>
     );
   }

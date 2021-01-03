@@ -1,7 +1,7 @@
 import './Search.css';
 import React, { Component } from 'react';
-import DrawFinder from './components/DrawFinder'
-import Finder from "./components/Finder"
+import DrawFinder from '../../components/DrawFinder/DrawFinder'
+import Finder from "../../components/Finder/Finder"
 
 class Search extends Component {
   constructor(props) {
