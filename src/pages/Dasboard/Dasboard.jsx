@@ -9,8 +9,8 @@ function Dasboard() {
     let Name = "pepe"
     let Range = 100
   return (
-    <>
-    <div className="Frame-1">
+    <div className="screen-init65">
+    <div >
         <h1>Hola, {Name}</h1>
         <Link to="/" className="nav-bar_list-li"><img src="" alt="" className="Ellipse-1"/> </Link>
         
@@ -39,7 +39,7 @@ function Dasboard() {
                              />)}
     </div>
      <NavBar/>
-    </>
+    </div>
   );
  
 }

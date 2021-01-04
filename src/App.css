@@ -5,3 +5,10 @@ body, html{
   justify-content: center;
   align-items: center;
 }
+
+.screen-init65 {
+  width: 100%;
+  width: 320px;
+  height: 568px;
+  background-image: url(../src/img/fondo.png)
+}

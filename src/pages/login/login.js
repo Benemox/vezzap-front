@@ -6,6 +6,8 @@ import { useValidator } from "../../components/Hooks/useValidator";
 import { LoginContext } from '../../components/Context/LoginContext';
 import { Error } from '../../components/Advice/Error';
 import LoginCss from '../login/login.css';
+import {Link} from "react-router-dom";
+import logo from '../../img/Frame.png';
 
 export const Login = () => {
 
@@ -127,14 +129,9 @@ export const Login = () => {
     }
 
     return (
-        <>
-            <div className={LoginCss.mainContainer}>
-                <img src="../../background.jpg" alt="Background" className={LoginCss.BG} />
-                <div className={LoginCss.gradientBG}></div>
-            </div>
-            <form onSubmit={handleSubmit} className={LoginCss.loginForm}>
-                <h1 className={LoginCss.titleLogin}>Iniciar sesión</h1>
-                <label>Tu email</label>
+        <div>
+            <form onSubmit={handleSubmit} className="screen-init65 Container42">
+            <img src={logo} alt="a" className="frame"/>
                 <input 
                     id="email"
                     type="text"
@@ -142,10 +139,11 @@ export const Login = () => {
                     placeholder="example@gmail.com"
                     autoComplete="off"
                     value={email}
+                    className="happy-box78"    
                     onChange={handleInputChange}/>
-                <i id={LoginCss.envelope} className="far fa-envelope"></i>   
+                
+                <br></br>
 
-                <label>Tu contraseña</label>
                 <input 
                     id="psw"
                     type={type}
@@ -153,15 +151,21 @@ export const Login = () => {
                     placeholder={placeholder}
                     autoComplete="off"
                     value={psw}
+                    className="happy-box78"  
                     onChange={handleInputChange} />
-                <i id={LoginCss.key} className="fas fa-key"></i>
+                
                 <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlePswVisibility}></i>
+                <br></br>
 
-                <button type="submit" className={LoginCss.loginBtn}>Iniciar sesión</button>
-               
+                <button type="submit" className="btn-157">Iniciar sesión</button>
+                <br></br>
+
+                <Link to="/register">  
+                    <button name="checkAge" className="btn-157">Quieres ser Vezapp</button>
+                </Link>
                 {/* <button className={LoginCss.backBtn} onClick={() => {redirect("/")}}>&lt;</button> */}
             </form>
-        </>
+        </div>
     )
 }
 export default Login

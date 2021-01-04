@@ -32,8 +32,8 @@ function RegisterPage() {
         {redirected && <Redirect to={redirected}/> }
         
             <form action="" id='form-reg-1' className='Frame-1'  onSubmit={handleSubmit(onSubmit)}>
-              <fieldset>
-                <legend></legend>  
+              <fieldset className="borde">
+                 
               <label htmlFor="" className="labelform">Usuario</label>
               <input type="text" name="user" id="user" ref={register} className="inputform"/>
               <label htmlFor="" className="labelform">Mail</label>
@@ -51,14 +51,3 @@ function RegisterPage() {
 }
 
 export default RegisterPage;
-/*
-<div className='Facebook-login-bar-1'>
-              <label htmlFor="" className="elige-perfil-1">perfil 1</label>
-              <input type="checkbox" name="checkAge" className="elige-perfil-1"/>
-        </div> 
-        
-        <div className='Facebook-login-bar-2'>
-          <label htmlFor="" className='elige-perfil-2'>perfil 2</label>
-          <input type="checkbox" name="checkAge" className="elige-perfil-2"/>
-        </div>
-        */
