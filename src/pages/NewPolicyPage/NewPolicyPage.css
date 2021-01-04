@@ -1,24 +1,26 @@
-.rectangle-33 {
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-    border: solid 0.3px #323f4b;
-  }
+body,html{
+ background-color: #473f3a;
+}
 
-  .aceptation-p {
-    width: 86.1px;
-    height: 9px;
-    margin: 3.5px 0 3.5px 4px;
-    font-family: Mulish;
-    font-size: 7.5px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0.08px;
-    text-align: center;
-    color: #323f4b;
-  }
   .new-policy-page{
-      display: flex;
+    display: flex;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+    padding-top: 50%;
+  }
+  .aceptation-p{
+    background-image: url(../../img/Initial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 25vh;
+    width: 17vh;
+    height: 30vh;
+    font-size: 2vh;
+    border-radius: 75px;
+   
+    
+    ;
   }

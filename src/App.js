@@ -6,6 +6,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage"
 import Dasboard from "./pages/Dasboard/Dasboard"
 import Scan from "./pages/Scan/Scan"
 import Search from "./pages/Search/Search"
+import login from "./pages/login/login"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/dasboard" component={Dasboard}/>
           <Route path="/Scan" component={Scan}/>
           <Route path="/Search" component={Search} />
+          <Route path="/login" component={login} />
           
         </Switch>
       </Router> 
