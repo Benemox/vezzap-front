@@ -1,15 +1,106 @@
 .Register {
     display:flex;
     width: 100%;
-    width: 160px;
-    height: 284px;
+    width: 320px;
+    height: 568px;
+    padding: 0px 0px 0px 0px;
     background-color: #ffffff;
   }
+
+  .Vezapp-Button-Login {
+    top:0;
+    width: 113px;
+    height: 20px;
+    margin: 145px 85px 85px 85px;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+  }
+
+  .Frame-1 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 78px 8px 8px 8px;
+
+width: 186px;
+height: 268px;
+left: 66.87px;
+top: 60px;
+
+background: #FFFFFF;
+opacity: 0.9;
+border-radius: 12px;
+
+}
+
+.labelform {
+  position: static;
+  left: 0%;
+  right: 60.24%;
+  top: 0%;
+  bottom: 78.95%;
+  
+  /* Label / ExtraBold */
+  
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  
+  /* Neutral / Grey 800 */
+  
+  color: #323F4B;
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px 0px 70px;
+
+}
+
+.inputform {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 7px 8px;
+
+position: static;
+width: 166px;
+height: 38px;
+left: 0px;
+top: 20px;
+
+/* Neutral / White */
+
+background: #FFFFFF;
+/* Neutral / Grey 400 */
+
+border: 0.5px solid #7B8794;
+box-sizing: border-box;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px 0px 60px;
+}
+
+/*
+
 .Facebook-login-bar-1 {
     
     width: 50%;
   height: 284px;
-  padding: 12px 0x 41px 0;
+  padding: 12px 0px 0px 0px;
   background-color: #a4a4a4;
   }
   .Facebook-login-bar-2 {
@@ -17,9 +108,13 @@
     width: 50%;
   height: 284px;
   margin: 0px 0 0;
-  padding: 8px 0px 44px 12px;
-  background-color: #e3e7eb;
+  padding: 12px 0px 0px 0px;
+  background-color: #1e1653;
   }
+
+*/
+
+/*
 
   .form-reg-1 {
     
@@ -31,6 +126,10 @@
     border-radius: 6px;
     background-color: #ffffff;
   }
+
+  */
+
+/*
 
   label {
     width: 33px;
@@ -47,14 +146,10 @@
     color: #323f4b;
   }
 
-  .Vezapp-Button-Login {
-    top:0;
-    width: 113px;
-    height: 20px;
-    margin: 44px 23.5px 20px;
-    border-radius: 6px;
-    background-color: #f5f7fa;
-  }
+*/
+
+  /*
+
   .Login {
     width: 113px;
     height: 7px;
@@ -69,6 +164,10 @@
     text-align: center;
     color: #7b8794;
   }
+
+*/
+
+  /*
   .elige-perfil-1 {
     width: 60px;
     height: 8px;
@@ -97,3 +196,4 @@
     text-align: left;
     color: #000000;
   }
+  */
