@@ -8,6 +8,9 @@ import { Error } from '../../components/Advice/Error';
 import LoginCss from '../login/login.css';
 import {Link} from "react-router-dom";
 import logo from '../../img/Frame.png';
+import loginbtn from '../../img/logon.png';
+import vesapbtn from '../../img/boton1.png';
+
 
 export const Login = () => {
 
@@ -157,11 +160,11 @@ export const Login = () => {
                 <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlePswVisibility}></i>
                 <br></br>
 
-                <button type="submit" className="btn-157">Iniciar sesión</button>
+                <button type="submit" className="btn-157"><img src={loginbtn} alt="a" className="frameimg"/> </button>
                 <br></br>
 
                 <Link to="/register">  
-                    <button name="checkAge" className="btn-157">Quieres ser Vezapp</button>
+                    <button name="checkAge" className="btn-157"><img src={vesapbtn} alt="a" className="frameimg"/></button>
                 </Link>
                 {/* <button className={LoginCss.backBtn} onClick={() => {redirect("/")}}>&lt;</button> */}
             </form>

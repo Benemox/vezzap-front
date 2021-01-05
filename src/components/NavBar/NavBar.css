@@ -1,0 +1,6 @@
+.nav-bar_list{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-button: 0 ;
+}

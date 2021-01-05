@@ -1,16 +1,4 @@
-.btn-157 {
-    background-image: url(../../img/Initial.png);
-    background-size:cover;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    height: 30px;
-    width: 195px;
-    left: 0px;
-    top: 0px;
-    border: none;
-}
+
 
 .Container42 {
     display: flex;
@@ -23,9 +11,7 @@
     margin-bottom: 50px;
 }
 
-.happy-box69 {
 
-}
 
 .happy-box78 {
 
@@ -44,5 +30,19 @@ top: 0px;
 
 }
 
-
+.btn-157 {
+    /* background-image: url(../../img/boton1.png); */
+    background-size: 100%;
+    background: none;
+    
+    height: 64px;
+    width: 180px;
+    margin-right: 25px;
+    top: 0px;
+    border: none;
+}
+.frameimg{
+    height: 64px;
+    width: 180px;
+}
 

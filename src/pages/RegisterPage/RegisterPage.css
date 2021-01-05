@@ -70,6 +70,19 @@ border: none;
 
 }
 
+/* left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFF0D3;
+border-radius: 6px;
+
+height: 34px;
+width: 225px;
+left: 0px;
+top: 0px; */
+
 .inputform {
   display: flex;
 flex-direction: row;

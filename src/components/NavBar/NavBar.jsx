@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavBar.css"
 
 
 
@@ -7,8 +8,8 @@ function navBar() {
  
 
   return (
-    <nav className="">
-      {/* <div className="nav-bar_list">
+    <nav className="nav-bar_list">
+       
         
           <Link to="/Dasboard" className="Vezapp-Item-default">
             <p>Menu</p>
@@ -26,16 +27,8 @@ function navBar() {
         
         
           <Link to="/Dasboard" className="Vezapp-Item-default">
-          <p>FeelBear</p>
+          <p>perfil</p>
           </Link>
-      </div> */}
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-
     </nav>
   );
 }
