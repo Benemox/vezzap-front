@@ -3,6 +3,7 @@ import { Link} from "react-router-dom";
 import "./Dasboard.css"
 import GoalsGrid from "../../components/GoalsGrid/GoalsGrid"
 import NavBar from "../../components/NavBar/NavBar"
+import Halfperfil from "../../components/Half-perfil/half-perfil";
 
 function Dasboard() {
    const [Goals] = useState([1,2,3])
@@ -10,18 +11,8 @@ function Dasboard() {
     let Range = 100
   return (
     <div className="screen-init65">
-    <div >
-        <h1>Hola, {Name}</h1>
-        <Link to="/" className="nav-bar_list-li"><img src="" alt="" className="Ellipse-1"/> </Link>
-        
-    </div>
-    <div className='Rectangle-1'>
-        <div className="User-name-rank">
-        <p>{Name}</p>
-        <p>{Range}</p>
-        </div>
-        <img src="" alt="" className='Vezappimage'/>
-    </div>
+      <Halfperfil />
+   
     <div className='Vezapp-Beer-Card'>
             <div className= 'Rectangle-44'>
                 <img src="" alt="" className="Size"/>

@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./Scan.css"
-import QrReader from "../../components/QrReader/QrReader"
 import  Barcode from "../../components/BarCodeReader/BarCodeReader"
-import WebcamScreenShot from  "../../components/webcamScreenShot/ScreenShot"
+
 
 function Scan() {
     
