@@ -1,0 +1,28 @@
+.Art-1{
+    background-image: linear-gradient(to right,#FFF176,#CE8800
+    );
+    width: 375px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 1px;
+}
+.Center{
+    background-image: linear-gradient(to right,#ffffff,#ce1800
+    );
+    font-size: 20px;
+    border-radius: 10px;
+}
+.img1{
+    border-radius: 10px;
+    shape-image-threshold: 0.5;
+    shape-margin: 20px;
+    float: left;
+    width: 160px;
+    height: 150px;
+}
+.Cen-1{
+    display: flex;
+}
+.NavBarSticky{
+    position : sticky;
+	bottom:0;
+}

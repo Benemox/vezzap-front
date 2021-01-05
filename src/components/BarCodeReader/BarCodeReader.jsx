@@ -11,7 +11,7 @@ class Barcode extends Component {
   }
   render() {
     return (
-      <div ref={this.state.VideoRef} className="App" >
+      <div ref={this.state.VideoRef} className="app" >
       </div>
     );
   }

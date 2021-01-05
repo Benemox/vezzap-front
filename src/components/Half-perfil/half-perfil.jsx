@@ -1,11 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 import "./half-perfil.css"
 
-function Halfperfil(){
-    const [name] = useState(["Eva Maria"])
-    const [range] = useState([100])
-    const [chapas] = useState([687])
-    const [expertise]= useState(["Experta Cervecera"])
+function Halfperfil({name,range,chapas,expertise}){
+   
     return(
         <div className="rectangle-1" >
             <div className="profile69">

@@ -7,6 +7,7 @@ import Dasboard from "./pages/Dasboard/Dasboard"
 import Scan from "./pages/Scan/Scan"
 import Search from "./pages/Search/Search"
 import login from "./pages/login/login"
+import Article from './pages/Articles/Article';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Scan" component={Scan}/>
           <Route path="/Search" component={Search} />
           <Route path="/login" component={login} />
+          <Route path="/Article" component={Article} />
           
         </Switch>
       </Router> 

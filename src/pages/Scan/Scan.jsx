@@ -1,28 +1,18 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import "./Scan.css"
 import  Barcode from "../../components/BarCodeReader/BarCodeReader"
-
+import NavBar from "../../components/NavBar/NavBar";
+import scn from "../../img/Frame Header.png"
 
 function Scan() {
     
-      
-      
-       
-    const but = ">"
     return (
-      <div className="Escner-etiquetas">
-          <div className= "VezappNav-Bar">
-             <Link to="/Dasboard" className="Size"><button>{but}</button></Link>
-             <p className="Frame-2">Escaner</p>
-             <img src="" alt="" className="Ellipse-1"/>
-             <br/>
+      <div className="Escn">
+          <div className= "header-S1">
+             <img src={scn} alt="Escanear"/>
           </div>
-          <br/>
-          <br/> 
-          {/* <WebcamScreenShot/> */}
-          {/* <QrReader/> */}
-        <Barcode/>
+        {/* <div><Barcode clasname="Scn-1"/></div> */}
+        < NavBar />
         
       </div>
     );

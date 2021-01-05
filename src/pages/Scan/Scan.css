@@ -1,65 +1,24 @@
-.Escner-etiquetas {
-    width: 160px;
-    height: 283.5px;
-    background-color: #ffffff;
-  }
-  .VezappNav-Bar {
-    width: 160px;
-    height: 39.5px;
-    padding: 11.5px 0 8px 8px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-  }
-  .Rectangle-46 {
-    width: 159.5px;
-    height: 244px;
-    margin: 39.5px 0 0 0.5px;
-    padding: 77.3px 0 39.5px 33px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  title {
-    width: 83.8px;
-    height: 12px;
-    margin: 4px 12.7px 4px 0;
-    font-family: Mulish;
-    font-size: 10px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0.08px;
-    text-align: center;
-    color: #323f4b;
-  }
-  .Rectangle-50 {
-    width: 93px;
-    height: 93.5px;
-    margin: 0 33.5px 10px 0;
-    mix-blend-mode: luminosity;
-    background-color: rgba(196, 196, 196, 0.5);
-  }
-  .Buscando {
-    width: 110.5px;
-    height: 23.7px;
-    margin: 10px 0 0 16px;
-    font-family: Mulish;
-    font-size: 10px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 0.08px;
-    text-align: center;
-    color: #000000;
-  }
-  .Ellipse-1 {
-    width: 20px;
-    height: 20px;
-    margin: 0 0 0 12.7px;
-  }
-  .Size {
-    width: 16px;
-    height: 16px;
-    margin: 0 8px 4px 0;
-    padding: 4px 6px;
-  }
+.header-S1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #ffffff;
+  height: 71px;
+  width: 375px;
+  border-radius: 0px;
+}
+.Scn-1{
+  position: absolute;
+  width: 175px;
+  height: 40.51px;
+  left: 0px;
+  top: 166.51px;
+  
+  background: rgba(39, 39, 39, 0.75);
+}
+.img-b1{
+  position: absolute;
+  width: 175px;
+  height: 585.51px;
+}

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css"
-
+import home from "../../img/dashboard.png"
+import search from "../../img/buscar.png"
+import Scan from "../../img/escaner.png"
+import Per from "../../img/mi perfil.png"
 
 
 function navBar() {
@@ -11,23 +14,23 @@ function navBar() {
     <nav className="nav-bar_list">
        
         
-          <Link to="/Dasboard" className="Vezapp-Item-default">
-            <p>Menu</p>
+          <Link to="/Dasboard" className="Vezapp-Item-default" >
+              <img src={home} alt=""/>
+          </Link>
+        
+        
+          <Link to="/Search" className="Vezapp-Item-default">
+            <img src={search} alt=""/>
+          </Link>
+        
+        
+          <Link to="/Scan" className="Vezapp-Item-default">
+          <img src={Scan} alt=""/>
           </Link>
         
         
           <Link to="/Dasboard" className="Vezapp-Item-default">
-          <p>Buscar</p>
-          </Link>
-        
-        
-          <Link to="/Dasboard" className="Vezapp-Item-default">
-          <p>Escanea</p>
-          </Link>
-        
-        
-          <Link to="/Dasboard" className="Vezapp-Item-default">
-          <p>perfil</p>
+           <img src={Per} alt=""/>
           </Link>
     </nav>
   );
