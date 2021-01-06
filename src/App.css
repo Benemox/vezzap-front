@@ -4,6 +4,7 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Noto_Sans_SC;
 
 }
 
@@ -16,3 +17,16 @@ body, html{
 .screen-back {
   background-image: url(../src/img/fondo.png)
 }
+
+.screen-scan {
+  background-image: url(../src/img/fondoscan.png);
+}
+
+.screen-search {
+  background-color: #FFF5DF;
+}
+
+@font-face {
+  font-family: Noto_Sans_SC;
+  src: url(../src/fonts/Noto_Sans_SC/OFL.txt);
+  }

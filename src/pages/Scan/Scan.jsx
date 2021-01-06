@@ -11,7 +11,7 @@ function Scan() {
        
     const but = ">"
     return (
-<div className="screen-size">
+<div className="screen-size screen-scan">
           <div className="Escner-etiquetas">
               <div className= "VezappNav-Bar">
                 <Link to="/Dasboard" className="Size"><button>{but}</button></Link>
