@@ -1,10 +1,6 @@
 .Register {
     display:flex;
-    width: 100%;
-    width: 320px;
-    height: 568px;
     padding: 0px 0px 0px 0px;
-    background-image: url(../../img/fondo.png);
   }
 
   .borde {

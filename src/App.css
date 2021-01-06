@@ -4,11 +4,15 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.screen-init65 {
-  width: 100%;
-  width: 320px;
-  height: 568px;
+.screen-size {
+  width: 375px;
+  height: 716px;
+  
+}
+
+.screen-back {
   background-image: url(../src/img/fondo.png)
 }

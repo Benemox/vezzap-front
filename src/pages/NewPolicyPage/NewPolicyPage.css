@@ -2,25 +2,20 @@ body,html{
  background-color: #473f3a;
 }
 
-  .new-policy-page{
-    display: flex;
-    font-size: 100px;
-    width: auto;
-    height: auto;
-    padding-top: 50%;
-  }
   .aceptation-p{
     background-image: url(../../img/Initial.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 25vh;
-    width: 17vh;
-    height: 30vh;
-    font-size: 2vh;
+    font-size: 1.5vh;
     border-radius: 75px;
    
-    
-    ;
   }
+
+  .Container42 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

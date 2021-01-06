@@ -28,7 +28,7 @@ function RegisterPage() {
     
 
   return (
-    <div className="Register">
+    <div className="Register screen-size screen-back">
         {redirected && <Redirect to={redirected}/> }
         
             <form action="" id='form-reg-1' className='Frame-1'  onSubmit={handleSubmit(onSubmit)}>

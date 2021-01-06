@@ -133,7 +133,7 @@ export const Login = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className="screen-init65 Container42">
+            <form onSubmit={handleSubmit} className="screen-size screen-back Container42">
             <img src={logo} alt="a" className="frame"/>
                 <input 
                     id="email"

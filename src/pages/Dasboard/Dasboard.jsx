@@ -10,27 +10,33 @@ function Dasboard() {
     let Name = "pepe"
     let Range = 100
   return (
-    <div className="screen-init65">
-      <Halfperfil />
+    
+      <div className="screen-back screen-size">
+        <Halfperfil />
    
-    <div className='Vezapp-Beer-Card'>
-            <div className= 'Rectangle-44'>
-                <img src="" alt="" className="Size"/>
-            </div>
-            <div className='Card-Gost'>
-                <p className='experimenta'>Experimenta</p>
-                    <p className='Drink-today'>¿Que comemos y bebemos hoy?</p>
-            </div>            
-    </div>
-    <div className="Goals">
-    {   Goals.map(goal => 
-                        <GoalsGrid
-                             key={goal}
-                            Goal = {goal}
-                             />)}
-    </div>
-     <NavBar/>
-    </div>
+                <div className='Vezapp-Beer-Card'>
+                        <div className= 'Rectangle-44'>
+                            <img src="" alt="" className="Size"/>
+                        </div>
+
+                        <div className='Card-Gost'>
+                            <p className='experimenta'>Experimenta</p>
+                                <p className='Drink-today'>¿Que comemos y bebemos hoy?</p>
+                        </div>            
+                </div>
+
+          <div className="Goals">
+          {   Goals.map(goal => 
+                              <GoalsGrid
+                                  key={goal}
+                                  Goal = {goal}
+                                  />)}
+          </div>
+
+                <NavBar/>
+
+      </div>
+    
   );
  
 }
