@@ -9,7 +9,7 @@ import logo from '../../img/Frame.png';
 function NewPolicyPage() {
 
   return (
-    <div className="screen-size Container42">
+    <div className="screen-size Container42 screen-search">
       <img src={logo} alt="a" />
             <Link to="/login">  
             

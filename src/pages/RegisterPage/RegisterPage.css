@@ -1,212 +1,53 @@
-.Register {
-    display:flex;
-    padding: 0px 0px 0px 0px;
-  }
+
 
   .borde {
 border: none;
   }
 
-  .Vezapp-Button-Login {
-    top:0;
-    width: 113px;
-    height: 20px;
-    margin: 145px 85px 85px 85px;
-    border-radius: 6px;
-    background-color: #f5f7fa;
-  }
-
-  .Frame-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 78px 8px 8px 8px;
-
-  width: 186px;
-  height: 268px;
-  left: 66.87px;
-  top: 60px;
-
-  
-  opacity: 0.9;
-  border-radius: 12px;
-
-}
-
-.labelform {
-  position: static;
-  left: 0%;
-  right: 60.24%;
-  top: 0%;
-  bottom: 78.95%;
-  
-  /* Label / ExtraBold */
-  
-  font-style: normal;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 100%;
-  /* identical to box height, or 12px */
-  
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  
-  /* Neutral / Grey 800 */
-  
-  color: #323F4B;
-  font-weight: bold;
-  
-  /* Inside Auto Layout */
-  
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px 0px 70px;
-
-}
-
-/* left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #FFF0D3;
-border-radius: 6px;
-
-height: 34px;
-width: 225px;
-left: 0px;
-top: 0px; */
-
 .inputform {
-  display: flex;
-flex-direction: row;
-align-items: center;
 padding: 7px 8px;
-
 position: static;
-width: 166px;
-height: 38px;
+width: 307px;
+height: 48px;
 left: 0px;
 top: 20px;
-
-/* Neutral / White */
-
-background: #FFFFFF;
-/* Neutral / Grey 400 */
-
-border: 0.5px solid #7B8794;
-box-sizing: border-box;
+background: #FFF0D3;
+border: 1px solid #FFFFFF;
 border-radius: 8px;
-
-/* Inside Auto Layout */
-
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 0px 0px 0px 60px;
+margin-bottom: 8px;
+margin-left: 10px;
 }
 
-/*
-
-.Facebook-login-bar-1 {
-    
-    width: 50%;
-  height: 284px;
-  padding: 12px 0px 0px 0px;
-  background-color: #a4a4a4;
-  }
-  .Facebook-login-bar-2 {
-    
-    width: 50%;
-  height: 284px;
-  margin: 0px 0 0;
-  padding: 12px 0px 0px 0px;
-  background-color: #1e1653;
+.frameimg{
+  height: 63px;
+  width: 289px;
   }
 
-*/
+  .btn-157 {
+    background-size: 100%;
+    background: none;
+    height: 63px;
+    width: 289px;
+    margin-left: 25px;
+    top: 0px;
+    border: none;
+}
 
-/*
+.distance {
+  margin-top: 45px;
+}
 
-  .form-reg-1 {
-    
-    width: 93px;
-    height: 134px;
-    margin: 30px 33.6px 44px 33.4px;
-    padding: 4px 0 3.5px 4px;
-    opacity: 0.9;
-    border-radius: 6px;
-    background-color: #ffffff;
-  }
+p {
+font-size: 32px;
+text-align: center;
+font-weight: 700;
+line-height: 46.34px;
+top: 16px;
+font-style: normal;
+align-items: center;
+color: #512C0A;
 
-  */
-
-/*
-
-  label {
-    width: 33px;
-    height: 6px;
-    opacity: 0.9;
-    font-family: Mulish;
-    font-size: 6px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.75px;
-    text-align: left;
-    color: #323f4b;
-  }
-
-*/
-
-  /*
-
-  .Login {
-    width: 113px;
-    height: 7px;
-    margin: 50.3px 23.5px 26.8px 23.5px;
-    font-family: Mulish;
-    font-size: 7px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.63px;
-    text-align: center;
-    color: #7b8794;
-  }
-
-*/
-
-  /*
-  .elige-perfil-1 {
-    width: 60px;
-    height: 8px;
-    margin: 164px 0 59px 10px;
-    font-family: Mulish;
-    font-size: 7px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.63px;
-    text-align: left;
-    color: #000000;
-  }
-  .Elige-perfil-2 {
-    width: 64px;
-    height: 8px;
-    margin: 168px 4px 56px 0;
-    font-family: Mulish;
-    font-size: 7px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.63px;
-    text-align: left;
-    color: #000000;
-  }
-  */
+}
