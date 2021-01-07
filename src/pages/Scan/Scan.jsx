@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import "./Scan.css"
 import  Barcode from "../../components/BarCodeReader/BarCodeReader"
+import Toptitle from "../../components/Toptitle/toptitle"
 
 
 function Scan() {
@@ -11,7 +12,9 @@ function Scan() {
        
     const but = ">"
     return (
+      
 <div className="screen-size screen-scan">
+<Toptitle />
           <div className="Escner-etiquetas">
               <div className= "VezappNav-Bar">
                 <Link to="/Dasboard" className="Size"><button>{but}</button></Link>

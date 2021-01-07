@@ -3,8 +3,7 @@ import "./toptitle.css"
 function Toptitle(){
         
     return(
-        <div> {/* className="title" >{title} */}
-
+        <div className="title"> 
         </div>
 
     );
