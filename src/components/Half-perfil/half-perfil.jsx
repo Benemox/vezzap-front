@@ -11,7 +11,7 @@ function Halfperfil(){
             <div className="profile69">
                 <div className="rectangle-2"> 
                 <p  className="rectangle-2p bold">{name}</p>
-                <p className="rectangle-2p">Rango {range}</p>
+                <p className="rectangle-c3po">Rango {range}</p>
                 </div>
                 <div className="rectangle-3">
                     <p className="rectangle-3p">{chapas}</p>
