@@ -160,6 +160,7 @@ export const Login = () => {
                 
                 <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlePswVisibility}></i>
                 <br></br>
+                <a href="/register">No recuerdo la contraseña</a>
         <div className="distance">
                 <button type="submit" className="btn-157"><img src={loginbtn} alt="a" className="frameimg"/> </button>
                 <br></br>

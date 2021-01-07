@@ -4,11 +4,14 @@ body, html{
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_SC;
+  margin: 0px;
+  height: 716px;
 }
 
 .screen-size {
   width: 375px;
   height: 716px;
+  margin: 0px;
 }
 
 .screen-back {
