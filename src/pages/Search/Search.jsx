@@ -2,6 +2,7 @@ import './Search.css';
 import React, { Component } from 'react';
 import DrawFinder from '../../components/DrawFinder/DrawFinder'
 import Finder from "../../components/Finder/Finder"
+import NavBar from "../../components/NavBar/NavBar";
 
 class Search extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Search extends Component {
     this.state = {
       buscando: '',
       //
-      tasks : ["comprar pan", "dividir pan","vender pan" ]
+      tasks : ["comprar pan", "dividir pan","vender pan","nueva"]
     };
   }
 
@@ -33,18 +34,16 @@ render(){
 
   return (
 // dentro de la primera etiqueta html q ya convierte el resto en JSX dentro no se puede poner un comentario :)
-   <div className="screen-size screen-search">
+  <div className="screen-size screen-search">
       
-      <Finder ph={"Busca tu cerveza aquí!"} mb={this.miBuscador} />
-      
-      <main>
-        <h1>Hola mundo</h1>
-       
-      </main>
+      <div class="title"></div>
 
+      <Finder ph={"  Busca tu cerveza aquí!"} mb={this.miBuscador} />
+    
       {this.pintarTareas()}  {/* este metodo se llama en el constructor y mete directamente el componente TASK y su estado */}
-       
-    </div>
+      
+      <NavBar />
+  </div>
   );
   }
 }

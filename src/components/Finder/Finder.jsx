@@ -10,8 +10,9 @@ class Finder extends Component {
   render() {
 
     return (
-        <div>
+        <div  className="finderbox">
       <input
+        className="inputbox"
         type='text'
         placeholder={this.props.ph}
         onChange={this.props.mb}

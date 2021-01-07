@@ -1,0 +1,16 @@
+.finderbox {
+    width: 375px;
+    height: 78px;
+}
+
+.inputbox {
+margin-top: 22px;
+margin-left:37px;
+background: #FFFFFF;
+border: 1px solid #AB7857;
+box-sizing: border-box;
+border-radius: 8px;
+width: 300px;
+height: 40px;
+
+}
