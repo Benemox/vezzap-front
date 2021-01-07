@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { BrowserRouter as Redirect} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./RegisterPage.css"
+import registerbtn from '../../img/register.png';
 
 
 
@@ -28,21 +29,20 @@ function RegisterPage() {
     
 
   return (
-    <div className="Register">
+    <div className="screen-size screen-back">
         {redirected && <Redirect to={redirected}/> }
-        
-            <form action="" id='form-reg-1' className='Frame-1'  onSubmit={handleSubmit(onSubmit)}>
+        <p>Registrate en Vezapp</p>
+            <form action="" id='form-reg-1' onSubmit={handleSubmit(onSubmit)}>
               <fieldset className="borde">
                  
-              <label htmlFor="" className="labelform">Usuario</label>
-              <input type="text" name="user" id="user" ref={register} className="inputform"/>
-              <label htmlFor="" className="labelform">Mail</label>
-              <input type="text" name="mail" id="mail" ref={register} className="inputform"/>
-              <label htmlFor="" className="labelform">Pwd</label>
-              <input type="password" name="pwd" id="pwd" ref={register} className="inputform"/>
-              <label htmlFor="" className="labelform">Repite</label>
-              <input type="password" name="pwdR" id="pwdR" ref={register} className="inputform"/>
-              <button  className='Vezapp-Button-Login'>Enviar</button>
+                  <input type="text" name="user" id="user" placeholder="nombre" ref={register} className="inputform"/>
+                  <input type="text" name="mail" id="mail" placeholder="example@gmail.com" ref={register} className="inputform"/>
+                  <input type="password" name="pwd" id="pwd" placeholder="password" ref={register} className="inputform"/>
+                  <input type="password" name="pwdR" id="pwdR" placeholder="repite password" ref={register} className="inputform"/>
+                      <div className="distance">
+                  <button  className='btn-157'><img src={registerbtn} alt="a" className="frameimg"/></button>
+                      </div>
+
               </fieldset>
             </form>
       

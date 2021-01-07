@@ -33,7 +33,7 @@ render(){
 
   return (
 // dentro de la primera etiqueta html q ya convierte el resto en JSX dentro no se puede poner un comentario :)
-   <div className="App">
+   <div className="screen-size screen-search">
       
       <Finder ph={"Busca tu cerveza aquí!"} mb={this.miBuscador} />
       

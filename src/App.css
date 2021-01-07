@@ -2,10 +2,31 @@ body, html{
   width: 100%;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  font-family: Noto_Sans_SC;
+
 }
 
-.screen-init65 {
-  /* width: 100%; */
+.screen-size {
+  width: 375px;
+  height: 716px;
+}
+
+.screen-back {
   background-image: url(../src/img/fondo.png)
 }
+
+.screen-scan {
+  background-image: url(../src/img/fondoscan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.screen-search {
+  background-color: #FFF5DF;
+}
+
+@font-face {
+  font-family: Noto_Sans_SC;
+  src: url(../src/fonts/Noto_Sans_SC/OFL.txt);
+  }

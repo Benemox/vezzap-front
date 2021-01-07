@@ -13,22 +13,30 @@ function Dasboard() {
     const [expertise]= useState(["Experta Cervecera"])
     let article
   return (
-    <div className="screen-init65">
-
+    
+      <div className="screen-back screen-size">
       <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
 
       <NewFoodBe/>
-{/* 
-     
-      <div className="Goals">
-    {   Goals.map(goal => 
-                        <GoalsGrid
-                             key={goal}
-                            Goal = {goal}
-                             />)}
-    </div> */}
-     <NavBar/>
-    </div>
+                <div className='Vezapp-Beer-Card'>
+                        <div className= 'Rectangle-44'>
+                            <img src="" alt="" className="Size"/>
+                        </div>
+        
+                </div>
+          
+          {/* <div className="Goals">
+          {   Goals.map(goal => 
+                              <GoalsGrid
+                                  key={goal}
+                                  Goal = {goal}
+                                  />)}
+          </div> */}
+
+                <NavBar/>
+
+      </div>
+    
   );
  
 }

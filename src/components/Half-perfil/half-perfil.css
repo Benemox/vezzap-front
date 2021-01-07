@@ -1,49 +1,73 @@
-.rectangle-1{
+.rectangle-1{ 
     background-image: linear-gradient(to right,#FFF176,#CE8800
     );
-    width: 320px;
+    width: 375px;
     height: 220px;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 1px;
   }
+
   .profile69{
       background-image: url(../../img/prueba1\ 1.png);
       background-repeat: no-repeat;
       height: 100%;
   }
+
   .rectangle-2{
       display: flex;
-     
       flex-direction: column;
       text-align: right;
+      height:64px;
 
-
-      height:64px
   }
   .bold{
     font-weight: bold;
   }
 
   .rectangle-2p{
-     margin: 5px 30px 0 0; 
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0px 36px 0px 0px;
+    text-align: right;
   }
-  .rectangle-3{
+  .rectangle-c3po{
+    font-family: Noto Sans SC;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 23px;
+text-align: right;
+margin: 0px 36px 0 0;
+  }
+
+  .rectangle-3{ 
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0;
-
-
     height:50px
 }
 .rectangle-3p{
-    font-size: 35px;
-    font-weight: bold;
-    margin: 0;
+font-family: Noto Sans SC;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 70px;
+text-align: center;
+margin:0px;
 }
 .rectangle-3p1{
-    font-size: 12px;
-    margin: 0;
+font-family: Noto Sans SC;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+margin:0px;
+margin-top:-20px;
 }
 
 
@@ -54,16 +78,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end; 
-    height:90px
+    height:90px;
+
+    font-family: Noto Sans SC;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 19px;
 }
 .rectangle-4p{
-    height: 20px;
-    width: 98px;
+    height: 24px;
+    width: 148px;
     background-color: #FFE551;
     border:solid 1px #B97B00;
     font-size: 12px;
     margin-right:10px;
+    
 }
 .margin{
-    margin: 2.3px
+    margin: 2.3px;
+    font-family: Noto Sans SC;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 19px;
 }

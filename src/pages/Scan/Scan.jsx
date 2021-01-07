@@ -2,20 +2,30 @@ import React from 'react'
 import "./Scan.css"
 import  Barcode from "../../components/BarCodeReader/BarCodeReader"
 import NavBar from "../../components/NavBar/NavBar";
-import scn from "../../img/Frame Header.png"
+
+import Toptitle from "../../components/Toptitle/toptitle"
+
 
 function Scan() {
     
     return (
-      <div className="Escn">
-          <div className= "header-S1">
-             <img src={scn} alt="Escanear"/>
-          </div>
-        {/* <div><Barcode clasname="Scn-1"/></div> */}
-        < NavBar />
-        
-      </div>
-    );
+      
+<div className="screen-size screen-scan">
+<Toptitle />
+          <div className="Escner-etiquetas">
+              <div className= "VezappNav-Bar">
+                <p className="Frame-2">Escaner</p>
+                <img src="" alt="" className="Ellipse-1"/>
+                <br/>
+              </div>
+              <br/>
+              <br/> 
+              
+            {/* <Barcode/> */}
+            < NavBar />
+          </div>       
+</div>
+        );
   }
   
   export default Scan;

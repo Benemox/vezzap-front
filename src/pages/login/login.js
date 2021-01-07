@@ -133,8 +133,9 @@ export const Login = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className="screen-init65 Container42">
             <img src={logo} alt="a" className="frame"/>
+            <form onSubmit={handleSubmit} className="screen-size screen-back Container42">
+            
                 <input 
                     id="email"
                     type="text"
@@ -154,18 +155,19 @@ export const Login = () => {
                     placeholder={placeholder}
                     autoComplete="off"
                     value={psw}
-                    className="happy-box78"  
+                    className="happy-box79"  
                     onChange={handleInputChange} />
                 
                 <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlePswVisibility}></i>
                 <br></br>
-
+        <div className="distance">
                 <button type="submit" className="btn-157"><img src={loginbtn} alt="a" className="frameimg"/> </button>
                 <br></br>
 
                 <Link to="/register">  
                     <button name="checkAge" className="btn-157"><img src={vesapbtn} alt="a" className="frameimg"/></button>
                 </Link>
+        </div>        
                 {/* <button className={LoginCss.backBtn} onClick={() => {redirect("/")}}>&lt;</button> */}
             </form>
         </div>
