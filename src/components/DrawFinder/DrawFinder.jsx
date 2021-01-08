@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './DrawFinder.css';
-import logo from '../../img/Frame.png';
+import defaultimg from "../../img/defaultbeer.png"
 
 class DrawFinder extends Component {
   constructor(props) {
@@ -20,15 +20,15 @@ class DrawFinder extends Component {
     }
   }
   */
-
   render() {
+    let prueba = this.props.beer.image ? this.props.beer.image : defaultimg
     return (
       
         <div className="drawfinderbox">
-            <img className="imgDrawbeer" src={logo} alt="" /> {/* src={this.props.imgBeer} */ }
-            <div className="beername"> <h2> {this.props.beerName} </h2> </div>
-            <div className="descrip-beer"> <h3 className="description"> aqui va la descripcion q esta llena de maticez, taninos 
-              y enriquecedoras palabras {/* {this.props.descripBeer} */} </h3> </div>
+            <img className="imgDrawbeer" src={prueba} alt="" /> 
+            <div className="beername"> <h2> {this.props.beer.name} </h2> </div>
+            <div className="descrip-beer"> <h3 className="description"> {this.props.beer.descr_full} </h3> 
+            </div>
 
 
 {/* <input type="checkbox" checked={this.state.checking} onChange={this.changeCheckbox} /> */}

@@ -5,6 +5,7 @@
 }
 
 .beername {
+    overflow: hidden;
     width: 321px;
     height: 46px;
     background-color: bisque;
@@ -15,6 +16,7 @@
 }
 
 .descrip-beer {
+    overflow: hidden;
     width: 321px;
     height: 89px;
     background-color: aquamarine;

@@ -1,11 +1,38 @@
 .title {
-    width: 375px;
-    height: 78px;
-    background-color: rgb(217, 255, 0);
+  width: 375px;
+  height: 78px;
+  margin: 0px;
 }
-
-.sticky  {
-    position: sticky;
-  position: -webkit-sticky;
-  top: 0; /* required */
+.backimg{
+width: 70px;
+height: 78px;
+float: left;
+margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.searchtitle{
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  color: #342A21;
+  width: 230px;
+  height: 78px;
+  display: inline-block;
+  text-align: center;
+}
+.filtroimg{
+  width: 70px;
+  height: 78px;
+  float: right;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .toptitle{
+    margin-top: 15px;
+  }
