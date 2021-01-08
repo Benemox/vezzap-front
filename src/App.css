@@ -1,16 +1,16 @@
 body, html{
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_SC;
-
+  margin: 0;
 }
 
 .screen-size {
-  width: 375px;
-  height: 716px;
-}
+   width: 375vw;
+  height: 568vh; 
+  background-size: contain;
+} 
 
 .screen-back {
   background-image: url(../src/img/fondo.png)
