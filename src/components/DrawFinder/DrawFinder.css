@@ -3,3 +3,39 @@
     height: 158px;
     margin: 12.5px;
 }
+
+.beername {
+    width: 321px;
+    height: 46px;
+    background-color: bisque;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.descrip-beer {
+    width: 321px;
+    height: 89px;
+    background-color: aquamarine;
+
+    display: flex;
+    align-items: center;
+
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.description {
+    margin-left: 135px;
+    margin-right: 10px;
+}
+
+.imgDrawbeer {
+    width: 113px;
+    height: 158px;
+    position: absolute;
+}
