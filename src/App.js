@@ -13,7 +13,7 @@ import Article from './pages/Articles/Article';
 function App() {
   return (
     <div className="App">
-           <Router>
+      <Router>
         <Switch>
           <Route exact path="/" component={NewPolicyPage} />
           <Route path="/register" component={RegisterPage} />
@@ -22,7 +22,6 @@ function App() {
           <Route path="/Search" component={Search} />
           <Route path="/login" component={login} />
           <Route path="/Article" component={Article} />
-          
         </Switch>
       </Router> 
     </div>

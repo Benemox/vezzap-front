@@ -1,0 +1,11 @@
+.title {
+    width: 375px;
+    height: 78px;
+    background-color: rgb(217, 255, 0);
+}
+
+.sticky  {
+    position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+}

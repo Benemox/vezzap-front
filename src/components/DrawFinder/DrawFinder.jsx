@@ -23,14 +23,11 @@ class DrawFinder extends Component {
   render() {
     return (
       
-        <div>
+        <div className="drawfinderbox">
           
           <h2> {this.props.taskText}</h2>
 
            <input type="checkbox" checked={this.state.checking} onChange={this.changeCheckbox} />
-
-
-         
 
         </div>
       

@@ -11,6 +11,7 @@ function navBar() {
  
 
   return (
+    <div className="navbarbox">
     <nav className="nav-bar_list">
        
         
@@ -33,6 +34,7 @@ function navBar() {
            <img src={Per} alt=""/>
           </Link>
     </nav>
+    </div>
   );
 }
 

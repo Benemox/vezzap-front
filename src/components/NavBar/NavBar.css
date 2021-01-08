@@ -9,3 +9,10 @@
     
     background-color: violet;
 }
+
+.navbarbox {
+    width: 375px;
+    height: 56px;
+    position: fixed;
+    bottom: 0px;
+}
