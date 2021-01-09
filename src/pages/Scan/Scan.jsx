@@ -18,10 +18,11 @@ function Scan() {
               </div>
               <div className="searchtitle">      
                 <p className="toptitle">Escanear</p>
-              </div>      
-              <div className="filtroimg" > 
+              </div>    
+                
+             {/* <div className="filtroimg" > 
                     <img  src={Filtro} alt="" />
-              </div>
+    </div> */}
           </div>
 
 

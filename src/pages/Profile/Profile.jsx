@@ -1,10 +1,11 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import "./Profile.css"
-import GoalsGrid from "../../components/GoalsGrid/GoalsGrid"
 import NavBar from "../../components/NavBar/NavBar"
 import Halfperfil from "../../components/Half-perfil/half-perfil";
-import NewFoodBe from "../../components/NewFoodBe/NewFoodBe"
+import Back from '../../img/Back.png';
+import Settings from '../../img/settings.png';
+
 
 function Profile() {
    
@@ -16,6 +17,19 @@ function Profile() {
   return (
     
       <div className="screen-back screen-size">
+
+                    <div className="title3">
+                                <div className="backimg">
+                                        <img  src={Back} alt="" />
+                                </div>
+                                <div className="searchtitle">      
+                                    <p className="toptitle">Tu perfil</p>
+                                </div>      
+                                <div className="filtroimg" > 
+                                        <img  src={Settings} alt="" />
+                                </div>
+                    </div>
+
       <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
 
       

@@ -32,6 +32,7 @@ class Search extends Component {
     .then(response =>response.json())
     .then(Data =>{
       const cervezas = []
+      console.log(Data);
       Data.map(beer =>(
           cervezas.push({
             name: `${beer.name}`,
