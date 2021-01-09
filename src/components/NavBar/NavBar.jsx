@@ -30,7 +30,7 @@ function navBar() {
           </Link>
         
         
-          <Link to="/Dasboard" className="Vezapp-Item-default">
+          <Link to="/Profile" className="Vezapp-Item-default">
            <img src={Per} alt=""/>
           </Link>
     </nav>

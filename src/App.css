@@ -1,5 +1,6 @@
 body, html{
-  width: 100%;
+  width: 375px;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_SC;

@@ -20,7 +20,7 @@ function RegisterPage() {
 		})
 		.then(response => {
       if ( response.redirected) {
-        setRedirected("/dasboard")
+        setRedirected("/Profile")
         }
 		})
       };

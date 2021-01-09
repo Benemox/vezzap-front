@@ -88,7 +88,7 @@ export const Login = () => {
 
                         case "1" :
                             Login.setLoginUserInfo(result)
-                            Redirect("/Dasboard");
+                            Redirect("/Profile");
                             break;
                         case "-1" :
                             
