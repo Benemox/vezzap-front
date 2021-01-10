@@ -6,6 +6,7 @@ import NavBar from "../../components/NavBar/NavBar"
 import Halfperfil from "../../components/Half-perfil/half-perfil";
 import NewFoodBe from "../../components/NewFoodBe/NewFoodBe"
 function Dasboard() {
+    
    const [Goals] = useState([1,2,3])
     let Name = "Eva Maria"
     let Range = 101

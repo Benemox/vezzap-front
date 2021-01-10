@@ -18,7 +18,8 @@ function Scan() {
               <br/>
               <br/> 
               
-            {/* <Barcode/> */}
+            {/* <Barcode className="prueba"/> */}
+
             < NavBar />
           </div>       
 </div>
