@@ -32,3 +32,8 @@ body, html{
   font-family: Noto_Sans_SC;
   src: url(../src/fonts/Noto_Sans_SC/OFL.txt);
   }
+
+.screen-white {
+    background-color: #ffffff;
+  }
+  

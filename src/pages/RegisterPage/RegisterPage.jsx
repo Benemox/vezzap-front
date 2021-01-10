@@ -33,7 +33,7 @@ function RegisterPage() {
             <form action="" id='form-reg-1' onSubmit={handleSubmit(onSubmit)}>
             
               <fieldset className="borde">
-              <p>Registrate en Vezapp</p>
+              <p className="usual-text">Registrate en Vezapp</p>
                   <input type="text" name="user" id="user" placeholder="nombre" ref={register} className="inputform"/>
                   <input type="text" name="mail" id="mail" placeholder="example@gmail.com" ref={register} className="inputform"/>
                   <input type="password" name="pwd" id="pwd" placeholder="password" ref={register} className="inputform"/>
