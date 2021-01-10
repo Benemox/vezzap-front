@@ -1,14 +1,15 @@
 .drawfinderbox {
     width: 375px;
     height: 158px;
-    margin: 12.5px;
+    margin: 0px 0px 12.5px 12.5px;
+    background-color:  #FFF5DF;
+
 }
 
 .beername {
     overflow: hidden;
     width: 321px;
     height: 46px;
-    background-color: bisque;
 
     display: flex;
     justify-content: flex-end;
@@ -19,7 +20,9 @@
     overflow: hidden;
     width: 321px;
     height: 89px;
-    background-color: aquamarine;
+    background-color: #DBB665;
+    box-shadow: 0px 0px 5px rgba(81, 44, 10, 0.3);
+    border-radius: 8px;
 
     display: flex;
     align-items: center;
@@ -32,12 +35,15 @@
 }
 
 .description {
-    margin-left: 135px;
-    margin-right: 10px;
+    margin-left: 140px;
+    margin-right: 15px;
 }
 
 .imgDrawbeer {
     width: 113px;
     height: 158px;
     position: absolute;
+    object-fit:cover;
+    border-radius: 8px;
+    margin-left: 17px;
 }

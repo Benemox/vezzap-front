@@ -45,3 +45,43 @@
     .toptitle{
       margin-top: 15px;
     }
+
+    .logoutimg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 271px;
+      height: 45.5px;
+      margin-left: 50px;
+      margin-top:8px;
+      margin-bottom:8px;
+    }
+
+    .Mybeertitle{
+      width: 375px;
+      height: 57.78px;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .Mybeertitle2{
+      font-family: Noto Sans SC;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+      margin: 0px;
+    }
+
+    .challenge-box{
+      width: 376px;
+      height: 222px;
+      
+    }
+
+    .imagechall {
+      
+    }

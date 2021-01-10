@@ -5,6 +5,9 @@ import NavBar from "../../components/NavBar/NavBar"
 import Halfperfil from "../../components/Half-perfil/half-perfil";
 import Back from '../../img/Back.png';
 import Settings from '../../img/settings.png';
+import Logout from '../../img/logout.png';
+import Chall from '../../img/chall.png';
+import Friends from '../../img/friends.png';
 
 
 function Profile() {
@@ -16,7 +19,7 @@ function Profile() {
     
   return (
     
-      <div className="screen-back screen-size">
+      <div className="screen-white screen-size">
 
                     <div className="title3">
                                 <div className="backimg">
@@ -30,16 +33,22 @@ function Profile() {
                                 </div>
                     </div>
 
-      <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
+                <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
+{/*
+                    <div className="" > 
+                                        <img className="logoutimg"  src={Logout} alt="" />
+                    </div>
+                    */}
 
-      
-                <div className='Vezapp-Beer-Card'>
-                        <div className= 'Rectangle-44'>
-                            <img src="" alt="" className="Size"/>
-                        </div>
-        
-                </div>
-          
+
+                    <div className="Mybeertitle">      
+                                    <p className="Mybeertitle2">Mi cervecería</p>
+                    </div> 
+
+                    <div className="challenge-box">
+                    <img  src={Chall} alt="" className="imgchall" /><img  src={Friends} alt="" className="imgchall" />
+                    </div>
+
                 <NavBar/>
 
       </div>
