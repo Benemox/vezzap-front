@@ -34,11 +34,11 @@ function Profile() {
                     </div>
 
                 <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
-{/*
+{/* ///////// esto se puede coger para replicar en AJUSTES y hacer una nueva pagina estatica
                     <div className="" > 
                                         <img className="logoutimg"  src={Logout} alt="" />
                     </div>
-                    */}
+   */}                 
 
 
                     <div className="Mybeertitle">      

@@ -9,6 +9,7 @@ import Scan from "./pages/Scan/Scan"
 import Search from "./pages/Search/Search"
 import login from "./pages/login/login"
 import Article from './pages/Articles/Article';
+import Infobeer from './pages/Infobeer/Infobeer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Search" component={Search} />
           <Route path="/login" component={login} />
           <Route path="/Article" component={Article} />
+          <Route path="/Infobeer" component={Infobeer} />
         </Switch>
       </Router> 
     </div>

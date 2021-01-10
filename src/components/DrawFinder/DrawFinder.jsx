@@ -7,19 +7,7 @@ class DrawFinder extends Component {
     super(props);
     this.state = { checking: '' };
   }
- /*
-  changeCheckbox = () => {
-    // Si no esta realizada...
-    if(this.state.checking === '') {
-      // La marco
-      this.setState({ checking : 'checked' })
-    }
-    else {
-      // La desmarco
-      this.setState({ checking : '' })
-    }
-  }
-  */
+ 
   render() {
     let prueba = this.props.beer.image ? this.props.beer.image : defaultimg
     return (
@@ -29,10 +17,6 @@ class DrawFinder extends Component {
             <div className="beername"> <h2> {this.props.beer.name} </h2> </div>
             <div className="descrip-beer"> <h3 className="description"> {this.props.beer.descr_full} </h3> 
             </div>
-
-
-{/* <input type="checkbox" checked={this.state.checking} onChange={this.changeCheckbox} /> */}
-
         </div>
       
     );
