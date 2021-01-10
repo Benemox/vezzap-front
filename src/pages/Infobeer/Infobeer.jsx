@@ -1,10 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import './Infobeer.css'
+import './Infobeer.css';
 import Back from '../../img/Back.png';
-
-
-
+import Vecleft from '../../img/Vectorleft.png';
+import Vecright from '../../img/Vectorright.png';
 
 function InfoBeer() {
 /*
@@ -41,11 +40,14 @@ function InfoBeer() {
                                 </div>
         </div>
 
-                <div  id="rotator" className="card-beer">
-                    <div id="block-1" className="position1 rotation1"></div>
-                    <div id="block-2" className="position2 rotation1">{/*<h3 className="description"> this.props.beer.descr_full </h3>*/}</div>
-                    <div id="block-3" className="position3 rotation1"></div> 
+                <div className="card-beer">
+                    <div className="left"> {/* {this.props.beer.name} */} </div>
+                    <div className="active"> {/*<h3 className="description"> this.props.beer.descr_full </h3>*/} </div>
+                    <div className="right">{/*  {this.props.beer.image}  */} </div>
                 </div>
+
+                <div className="Vleft"> <img src={Vecleft} alt="" /> </div>
+                <div className="Vright"> <img src={Vecright} alt="" /> </div>
     </div>
     
   );
