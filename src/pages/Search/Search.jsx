@@ -32,6 +32,7 @@ class Search extends Component {
     .then(response =>response.json())
     .then(Data =>{
       const cervezas = []
+      console.log(Data);
       Data.map(beer =>(
           cervezas.push({
             name: `${beer.name}`,
@@ -63,22 +64,21 @@ render(){
   return (
 // dentro de la primera etiqueta html q ya convierte el resto en JSX dentro no se puede poner un comentario :)
   <div className="screen-size screen-search">
-      <div className="title">
-          <div className="backimg">
-                <img  src={Back} alt="" />
+          <div className="title">
+              <div className="backimg">
+                    <img  src={Back} alt="" />
+              </div>
+              <div className="searchtitle">      
+                <p className="toptitle">Buscar</p>
+              </div>      
+              <div className="filtroimg" > 
+                    <img  src={Filtro} alt="" />
+              </div>
           </div>
-          <div className="searchtitle">      
-             <p className="toptitle">Buscar</p>
-          </div>      
-          <div className="filtroimg" > 
-                <img  src={Filtro} alt="" />
-          </div>
-      </div>
       <Finder ph={"  Busca tu cerveza aquí!"} mb={this.miBuscador} />
     
       {this.pintarTareas()}{/*this.getNoticias()*/}
 
-      
       <NavBar />
   </div>
   );

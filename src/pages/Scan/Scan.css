@@ -22,8 +22,22 @@
   width: 175px;
   height: 585.51px;
 }
+<<<<<<< HEAD
 .prueba{
   overflow: hidden;
   width: 300px;
   height: 100px;
+=======
+
+.title2 {
+  width: 375px;
+  height: 78px;
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+.Escner-etiquetas {
+  width: 375px;
+  height: 582px;
+>>>>>>> cd4609f108be1a11441326dcc8b96debd38225f1
 }
