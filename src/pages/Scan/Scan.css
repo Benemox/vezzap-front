@@ -34,3 +34,12 @@
   width: 375px;
   height: 582px;
 }
+
+.imgBuffer video{
+  margin-left: 50px;
+  width: 275px;
+  height: 385.51px
+}
+.imgBuffer canvas{
+  display: none
+}
