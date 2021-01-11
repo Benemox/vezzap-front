@@ -29,13 +29,11 @@ const [beerInfo,setbeerInfo] = useState(null);
           <Route path="/Scan" component={Scan}/>
           <Route path="/login" component={login} />
           <Route path="/Article" component={Article} />
-
           <Route path="/Search">
                   <InfobeerProvider value={{beerInfo,setbeerInfo}}>
                     <Search />
                   </InfobeerProvider>
-          </Route>
-          
+          </Route>         
           <Route path="/Infobeer">
                   <InfobeerProvider value={{beerInfo,setbeerInfo}}>
                       <Infobeer />
