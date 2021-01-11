@@ -19,24 +19,9 @@ function Scan() {
               <div className="searchtitle">      
                 <p className="toptitle">Escanear</p>
               </div>    
-                
-             {/* <div className="filtroimg" > 
-                    <img  src={Filtro} alt="" />
-    </div> */}
           </div>
-
-
           <div className="Escner-etiquetas screen-scan">
-              <div className= "VezappNav-Bar">
-                {/* <p className="Frame-2">Escaner</p>*/}
-                <img src="" alt="" className="Ellipse-1"/>
-                <br/>
-              </div>
-              <br/>
-              <br/> 
-              
-            <Barcode className="prueba"/>
-
+            <Barcode/>
             < NavBar />
           </div>       
 </div>

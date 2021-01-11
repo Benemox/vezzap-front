@@ -46,35 +46,33 @@ componentDidMount() {
       Quagga.start();
       console.log("Started");
       let qP = Quagga.onProcessed((result) => {
-        var drawingCtx = Quagga.canvas.ctx.overlay,
-        drawingCanvas = Quagga.canvas.dom.overlay;
+       //var drawingCtx = Quagga.canvas.ctx.overlay
+        // drawingCanvas = Quagga.canvas.dom.overlay;
 if (result) {
           if (result.boxes) {
-            drawingCtx.clearRect(0, 0, parseInt(drawingCanvas.getAttribute("width")), parseInt(drawingCanvas.getAttribute("height")));
+            //drawingCtx.clearRect(0, 0, parseInt(drawingCanvas.getAttribute("width")), parseInt(drawingCanvas.getAttribute("height")));
             result.boxes.filter(function (box) {
               return box !== result.box;
             }).forEach(function (box) {
-           //   Quagga.ImageDebug.drawPath(box, { x: 0, y: 1 }, drawingCtx, { color: "green", lineWidth: 2 });
+          //  Quagga.ImageDebug.drawPath(box, { x: 0, y: 1 }, drawingCtx, { color: "green", lineWidth: 2 });
             });
           }
 if (result.box) {
-            Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
+            // Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
           }
 if (result.codeResult && result.codeResult.code) {
                 let ean = 72783000010 //result.codeResult.code
                
                   fetch(`http://localhost:8080/ImgoingTohaveLuck/${ean}`)
                   .then(response =>response.json())
-                  .then(Data =>{
-                    const cervezas = []
-                    console.log(Data);
-                    Data.map(beer =>(
-                        cervezas.push({
+                  .then(Data =>{ console.log(Data);
+                  const cervezas = Data.map(beer =>(
+                         {
                           name: `${beer.name}`,
                           IDBEER: `${beer.name}`,
                           descr_full: `${beer.descr_full}`,
                           image : `${beer.image}`
-                        })
+                        }
                       ))
                     return cervezas})
                   .then(cervezas =>  this.setState({
@@ -87,7 +85,7 @@ if (result.codeResult && result.codeResult.code) {
             let canvas = document.querySelector(".App canvas");
             console.log(img, canvas);
             canvas.getContext("2d").drawImage(img, 0, 0);
-            Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
+           // Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
             Quagga.offProcessed(qP);
             Quagga.stop();
             

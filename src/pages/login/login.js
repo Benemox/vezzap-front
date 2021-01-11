@@ -35,7 +35,7 @@ export const Login = () => {
         .then (data => {
             console.log(data);
             if(data.ok === true){
-               º
+               
                 Redirect("/Dasboard")}
         })
 
