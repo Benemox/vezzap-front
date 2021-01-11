@@ -48,6 +48,7 @@
     border-radius: 12px;
     transform: rotate(4.33deg);
     transition: 2s;
+    z-index: 0;
 }
 
 .Vleft{

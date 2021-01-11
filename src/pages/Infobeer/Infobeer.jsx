@@ -10,17 +10,25 @@ function InfoBeer() {
 
     const Beer = useContext(infobeerContext);
 
+     const funcionrotaratras = () => {
+        let card = document.querySelectorAll(".card");
+        console.log(card[0].className);
+        card.map(e => {
+            
+        })
+    }
+
 /*
     function atras() {	
-            id1.removeClass().addClass("active");
-            $("#block-2").removeClass().addClass("non-active-top");
-            $("#block-3").removeClass().addClass("non-active-bottom");
+            removeClass(right).addClass(center);
+            removeClass(center).addClass(left);
+            removeClass(left).addClass(right);
     }
 
     function adelante() {
-            byId("#block-1").removeClass().addClass("active");
-            $("#block-2").removeClass().addClass("non-active-top");
-            $("#block-3").removeClass().addClass("non-active-bottom");
+            .removeClass(right).addClass(left);
+            .removeClass(left).addClass(center);
+            .removeClass(center).addClass(right);
         }
     */
 
@@ -33,15 +41,15 @@ function InfoBeer() {
         </div>
 
                 <div className="card-beer">
-                    <div className="left"> {/* {this.props.beer.name} */} </div>
+                    <div className="card left"> {/* {this.props.beer.name} */} </div>
                     
-                    {/* <div className="center"> <h3 className="description"> this.props.beer.descr_full </h3> </div>
-                    <div className="right">  {this.props.beer.image}  </div> */}
+                    <div className="card center"> <h3 className="description"> {/*this.props.beer.descr_full*/} </h3> </div>
+                    <div className="card right">  {/* {this.props.beer.image}  */ } </div>
                 
                 </div>
 
-                <div className="Vleft"> <img src={Vecleft} alt="" /> </div>
-                <div className="Vright"> <img src={Vecright} alt="" /> </div>
+                <button className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </button>
+                <button className="Vright"> <img src={Vecright} alt="" /> </button>
     </div>
     
   );
