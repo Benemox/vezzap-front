@@ -12,7 +12,7 @@
     width: 244px;
     height: 392px;
     left: 18.06px;
-    top: 159.89px;
+    top: 69.89px; /* 159 */
     background-color: red;
     background: #D9D9D9;
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
@@ -27,7 +27,7 @@
     width: 252.3px;
     height: 453.36px;
     left: 61.71px;
-    top: 127px;
+    top: 37px;
     background-color: brown;
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
@@ -41,7 +41,7 @@
     width: 244px;
     height: 392px;
     left: 112.86px;
-    top: 141.69px;
+    top: 51.69px;
     background-color: orange;
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
@@ -51,20 +51,31 @@
     z-index: 0;
 }
 
+.Vboth{
+    position: absolute;
+    top: 520px;
+    width: 375px;
+}
+
 .Vleft{
     display:inline-block;
-    margin-left:25px;
+    margin-left:75px;
+    background-color: transparent;
+    border: 0px;
 }
 .Vright{
     display:inline-block;
-    margin-left:280px;
+    margin-left:165px;
+    background-color: transparent;
+    border: 0px;
 }
 
 
 
 
 
-/* .right-center {
+/* 
+.right-center {
     position: absolute;
     width: 252.3px;
     height: 453.36px;
@@ -111,10 +122,6 @@
     
 }
 
-
-
-
-
  .right-left {
     position: absolute;
     width: 244px;
@@ -160,4 +167,17 @@
     transform: rotate(4.33deg);
     z-index: 0;
     transition: 2s;
-} */
+} 
+
+function atras() {	
+            removeClass(right).addClass(center);
+            removeClass(center).addClass(left);
+            removeClass(left).addClass(right);
+    }
+
+function adelante() {
+            .removeClass(right).addClass(left);
+            .removeClass(left).addClass(center);
+            .removeClass(center).addClass(right);
+        }
+*/

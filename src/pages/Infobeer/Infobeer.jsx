@@ -5,12 +5,14 @@ import Back from '../../img/Back.png';
 import Vecleft from '../../img/Vectorleft.png';
 import Vecright from '../../img/Vectorright.png';
 import infobeerContext from "../../components/Context/infobeerContext";
-import navBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar/NavBar"
 
 function InfoBeer() {
 
     const Beer = useContext(infobeerContext);
-    console.log(Beer)
+    //const Data = Beer.InfoBeer
+    console.log(Beer);
+
      const funcionrotaratras = () => {
         let card = document.querySelectorAll(".card");
             let items = Array.from(card).map(elem => {
@@ -20,41 +22,39 @@ function InfoBeer() {
          })
     }
 
-/*
-    function atras() {	
-            removeClass(right).addClass(center);
-            removeClass(center).addClass(left);
-            removeClass(left).addClass(right);
+    const funcionrotaradelante = () => {
+        let card = document.querySelectorAll(".card");
+            let items = Array.from(card).map(elem => {
+                if (elem.className === "card center") return elem.setAttribute("class", "card right")
+                if (elem.className === "card right") return elem.setAttribute("class", "card left");
+                if (elem.className === "card left") return elem.setAttribute("class", "card center");
+         })
     }
-
-    function adelante() {
-            .removeClass(right).addClass(left);
-            .removeClass(left).addClass(center);
-            .removeClass(center).addClass(right);
-        }
-    */
 
   return (
     <div className="screen-size screen-back" >
         <div className="title4">
+            <Link to="/search" >
                                 <div className="backimg">
                                         <img  src={Back} alt="" />
                                 </div>
+            </Link>
         </div>
 
                 <div className="card-beer">
-                    <div className="card left"> {/* {this.props.beer.name} */} </div>
-                    
-                    <div className="card center"> <h3 className="description"> {/*this.props.beer.descr_full*/} </h3> </div>
+                    <div className="card left"> {Beer.beerInfo.name}  </div>
+                    {console.log(Beer.beerInfo.name)}
+                    <div className="card center"> <h3 className="description"> {Beer.descr_full} </h3> </div>
                     <div className="card right"> 
-                     {/* {this.props.beer.image}  */ } 
+                     {Beer.image}  
                      </div>
                 
                 </div>
-
-                <button className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </button>
-                <button className="Vright"> <img src={Vecright} alt="" /> </button>
-           
+<div className="Vboth">
+                <div className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </div>
+                <div className="Vright" onClick={funcionrotaradelante}> <img src={Vecright} alt="" /> </div>
+</div>
+                <NavBar/>
     </div>
     
   );

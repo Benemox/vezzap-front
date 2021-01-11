@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useRedirect } from '../../components/Hooks/useRedirect';
-
-
+import "./login.css";
 import {Link} from "react-router-dom";
 import logo from '../../img/Frame.png';
 import loginbtn from '../../img/logon.png';
