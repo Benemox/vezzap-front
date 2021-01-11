@@ -32,16 +32,8 @@ class Search extends Component {
     fetch('http://localhost:8080/Beer')
     .then(response =>response.json())
     .then(Data =>{
-      const cervezas = []
+      const cervezas = Data
       console.log(Data);
-      Data.map(beer =>(
-          cervezas.push({
-            name: `${beer.name}`,
-            IDBEER: `${beer.name}`,
-            descr_full: `${beer.descr_full}`,
-            image : `${beer.image}`
-          })
-        ))
       return cervezas})
     .then(cervezas => this.setState({cervezas}))
     .catch(error=>console.log(error))

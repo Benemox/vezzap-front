@@ -5,11 +5,12 @@ import Back from '../../img/Back.png';
 import Vecleft from '../../img/Vectorleft.png';
 import Vecright from '../../img/Vectorright.png';
 import infobeerContext from "../../components/Context/infobeerContext";
+import navBar from "../../components/NavBar/NavBar";
 
 function InfoBeer() {
 
     const Beer = useContext(infobeerContext);
-
+    console.log(Beer)
      const funcionrotaratras = () => {
         let card = document.querySelectorAll(".card");
             let items = Array.from(card).map(elem => {
@@ -53,6 +54,7 @@ function InfoBeer() {
 
                 <button className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </button>
                 <button className="Vright"> <img src={Vecright} alt="" /> </button>
+                <navBar/>
     </div>
     
   );
