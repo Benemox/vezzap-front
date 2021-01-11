@@ -114,12 +114,7 @@
 
 
 
-<<<<<<< HEAD
-/*derecha a izquierda*/
-/* .right:hover {
-=======
  .right-left {
->>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
     position: absolute;
     width: 244px;
     height: 392px;
@@ -132,16 +127,10 @@
     border-radius: 12px;
     transform: rotate(-3.87deg);
     z-index: 0;
-<<<<<<< HEAD
-} */
-/* izquierda a centro*/
-/* .left:hover {
-=======
     transition: 2s;
 } 
 
 .left-center {
->>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
     position: absolute;
     width: 252.3px;
     height: 453.36px;
@@ -155,15 +144,9 @@
     transform: rotate(0deg);
     transition: 2s;
     
-<<<<<<< HEAD
-} */
-/* de centro a derecha */
-/* .active:hover {
-=======
 }  
 
 .center-right {
->>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
     position: absolute;
     width: 244px;
     height: 392px;
@@ -175,10 +158,5 @@
     border-radius: 12px;
     transform: rotate(4.33deg);
     z-index: 0;
-<<<<<<< HEAD
-    
-} */
-=======
     transition: 2s;
 } */
->>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
