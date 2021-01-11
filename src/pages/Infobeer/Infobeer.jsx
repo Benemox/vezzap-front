@@ -54,7 +54,7 @@ function InfoBeer() {
 
                 <button className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </button>
                 <button className="Vright"> <img src={Vecright} alt="" /> </button>
-                <navBar/>
+           
     </div>
     
   );
