@@ -10,28 +10,39 @@ import Search from "./pages/Search/Search"
 import login from "./pages/login/login"
 import Article from './pages/Articles/Article';
 import Infobeer from './pages/Infobeer/Infobeer';
-import {UserProvider} from "./components/Context/LoginContext"
+import { InfobeerProvider } from './components/Context/infobeerContext';
+import { useState } from 'react';
+
 
 function App() {
-  //const { userInfo, setUserInfo } = useContext(UserProvider);
+
+const [beerInfo,setbeerInfo] = useState(null);
+
   return (
     <div className="App">
-      
-      {/* <UserProvider value={{userInfo, setUserInfo}}> */}
-        <Router>
-          <Switch>
-            <Route exact path="/" component={NewPolicyPage} />
-            <Route path="/register" component={RegisterPage} />
-            <Route path="/dasboard" component={Dasboard}/>
-            <Route path="/Profile" component={Profile} />
-            <Route path="/Scan" component={Scan}/>
-            <Route path="/Search" component={Search} />
-            <Route path="/login" component={login} />
-            <Route path="/Article" component={Article} />
-            <Route path="/Infobeer" component={Infobeer} />
-          </Switch>
-        </Router>
-      {/* </UserProvider> */}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={NewPolicyPage} />
+          <Route path="/register" component={RegisterPage} />
+          <Route path="/dasboard" component={Dasboard}/>
+          <Route path="/Profile" component={Profile} />
+          <Route path="/Scan" component={Scan}/>
+          <Route path="/login" component={login} />
+          <Route path="/Article" component={Article} />
+
+          <Route path="/Search">
+                  <InfobeerProvider value={{beerInfo,setbeerInfo}}>
+                    <Search />
+                  </InfobeerProvider>
+          </Route>
+          
+          <Route path="/Infobeer">
+                  <InfobeerProvider value={{beerInfo,setbeerInfo}}>
+                      <Infobeer />
+                    </InfobeerProvider>
+          </Route>
+        </Switch>
+      </Router> 
     </div>
   );
 }

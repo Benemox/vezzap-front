@@ -55,7 +55,6 @@ class Search extends Component {
               return cerveza.name.toLowerCase().includes(this.state.buscando.toLowerCase())
             })
             .map((valor) => {
-              console.log(valor)
              return <DrawFinder beer={valor} />
             });
   }

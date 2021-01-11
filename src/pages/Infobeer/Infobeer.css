@@ -22,7 +22,7 @@
     transition:2s;
     z-index: 0;
 }
-.active{
+.center{
     position: absolute;
     width: 252.3px;
     height: 453.36px;
@@ -34,6 +34,7 @@
     border-radius: 12px;
     z-index: 1;
     transition:2s;
+    transform: rotate(0deg);
 }
 .right{
     position: absolute;
@@ -48,60 +49,11 @@
     transform: rotate(4.33deg);
     transition: 2s;
 }
-/*
-
-posicion ATRAS
-
-.derecha a centro {
-    position: absolute;
-    width: 252.3px;
-    height: 453.36px;
-    left: 61.71px;
-    top: 127px;
-    background-color: brown;
-    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
-    backdrop-filter: blur(4px);
-    border-radius: 12px;
-    z-index: 1;
-    transform: rotate(0deg);
-}
-.centro a izquierda {
-    position: absolute;
-    width: 244px;
-    height: 392px;
-    left: 18.06px;
-    top: 159.89px;
-    background-color: red;
-    background: #D9D9D9;
-    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
-    backdrop-filter: blur(4px);
-    border-radius: 12px;
-    transform: rotate(-3.87deg);
-    z-index: 0;
-}
-
-.izquierda a derecha {
-    position: absolute;
-    width: 244px;
-    height: 392px;
-    left: 112.86px;
-    top: 141.69px;
-    background-color: orange;
-    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
-    backdrop-filter: blur(4px);
-    border-radius: 12px;
-    transform: rotate(4.33deg);
-    z-index: 1;
-    
-}
-
-*/
 
 .Vleft{
     display:inline-block;
     margin-left:25px;
 }
-
 .Vright{
     display:inline-block;
     margin-left:280px;
@@ -109,10 +61,24 @@ posicion ATRAS
 
 
 
-/*posicion ADELANTE*/
 
-/*derecha a izquierda*/
-/* .right:hover {
+
+/* .right-center {
+    position: absolute;
+    width: 252.3px;
+    height: 453.36px;
+    left: 61.71px;
+    top: 127px;
+    background-color: brown;
+    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    z-index: 1;
+    transform: rotate(0deg);
+    transition: 2s;
+}
+
+.center-left {
     position: absolute;
     width: 244px;
     height: 392px;
@@ -125,24 +91,10 @@ posicion ATRAS
     border-radius: 12px;
     transform: rotate(-3.87deg);
     z-index: 0;
-} */
-/* izquierda a centro*/
-/* .left:hover {
-    position: absolute;
-    width: 252.3px;
-    height: 453.36px;
-    left: 61.71px;
-    top: 127px;
-    background-color: brown;
-    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
-    backdrop-filter: blur(4px);
-    border-radius: 12px;
-    z-index: 1;
-    transform: rotate(0deg);
-    
-} */
-/* de centro a derecha */
-/* .active:hover {
+    transition: 2s;
+}
+
+.left-right {
     position: absolute;
     width: 244px;
     height: 392px;
@@ -154,5 +106,79 @@ posicion ATRAS
     border-radius: 12px;
     transform: rotate(4.33deg);
     z-index: 0;
+    transition: 2s;
+    
+}
+
+
+
+
+
+<<<<<<< HEAD
+/*derecha a izquierda*/
+/* .right:hover {
+=======
+ .right-left {
+>>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
+    position: absolute;
+    width: 244px;
+    height: 392px;
+    left: 18.06px;
+    top: 159.89px;
+    background-color: red;
+    background: #D9D9D9;
+    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    transform: rotate(-3.87deg);
+    z-index: 0;
+<<<<<<< HEAD
+} */
+/* izquierda a centro*/
+/* .left:hover {
+=======
+    transition: 2s;
+} 
+
+.left-center {
+>>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
+    position: absolute;
+    width: 252.3px;
+    height: 453.36px;
+    left: 61.71px;
+    top: 127px;
+    background-color: brown;
+    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    z-index: 1;
+    transform: rotate(0deg);
+    transition: 2s;
+    
+<<<<<<< HEAD
+} */
+/* de centro a derecha */
+/* .active:hover {
+=======
+}  
+
+.center-right {
+>>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
+    position: absolute;
+    width: 244px;
+    height: 392px;
+    left: 112.86px;
+    top: 141.69px;
+    background-color: orange;
+    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    transform: rotate(4.33deg);
+    z-index: 0;
+<<<<<<< HEAD
     
 } */
+=======
+    transition: 2s;
+} */
+>>>>>>> 738b5f28ab46f19fc96a89105af440685cf861ca
