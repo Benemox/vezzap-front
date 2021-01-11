@@ -1,135 +1,50 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { useForm } from '../../components/Hooks/useForm';
-import { Fetch } from '../../components/Hooks/useFetch';
 import { useRedirect } from '../../components/Hooks/useRedirect';
-import { useValidator } from "../../components/Hooks/useValidator";
-import { LoginContext } from '../../components/Context/LoginContext';
-import { Error } from '../../components/Advice/Error';
-import LoginCss from '../login/login.css';
+
+
 import {Link} from "react-router-dom";
 import logo from '../../img/Frame.png';
 import loginbtn from '../../img/logon.png';
 import vesapbtn from '../../img/boton1.png';
-
+//import {UserProvider, userProvider} from "../../components/Context/LoginContext"
 
 export const Login = () => {
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    
+    const user = {
+        email: email,
+        pwd: password
+    }
+
+    console.log(user);
     const Redirect = useRedirect();
-    const Login = useContext(LoginContext);
-    const {validateCredentials, validateEmail, validatePsw} = useValidator();
+     const placeholder = "*******"
+   
+    const fetchData = async () => {
+        const url = 'http://localhost:8080/login'
+         await fetch (url, {            
+            method:"POST",
+            //credentials:"include",
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            body: JSON.stringify(user)
+        })
+        .then (data => {
+            console.log(data);
+            if(data.ok === true){
+               º
+                Redirect("/Dasboard")}
+        })
 
-    const [formValues, handleInputChange] = useForm({
-        email : "",
-        psw : "",
-    })
-
-    const [statePsw, setStatePsw] = useState({
-        type : "password",   
-        placeholder : "**********"
-    })
-
-    let {email, psw} = formValues;
-    const {type, placeholder} = statePsw;
-
-    const HandlePswVisibility = (e) => {
-
-        e.preventDefault();
-
-        const psw = document.querySelector('#psw');
-        
-        setStatePsw({
-            ...statePsw,
-            type : "password" ? "text" : "password",
-            placeholder : "**********" ? "123ytube" : "**********"
-        });
-
-        psw.type = statePsw.type
-        psw.placeholder = statePsw.placeholder
-
-        e.target.className = e.target.className === 'fas fa-eye' ? 'fas fa-eye-slash' : 'fas fa-eye';
     }
-
-    useEffect(() => {
-        
-    }, [statePsw])
-
-    const handleSubmit = (e) =>{
-
+    const handleSubmit = (e) => {
         e.preventDefault();
-
-        if(!validateEmail(email)){
-            email = "";
-            document.querySelector("#email").className = `${LoginCss.ErrorInput}`;
-            setTimeout(() => {
-                document.querySelector("#email").className = ""
-            },1500)
-
-        }
-
-        if(!validatePsw(psw)){
-            psw = "";
-            document.querySelector("#psw").className = `${LoginCss.ErrorInput}`;
-            setTimeout(() => {
-                document.querySelector("#psw").className = "";
-            },1500)
-        }
-
-        if(validateCredentials(email, psw)){
-
-            Fetch(`${process.env.REACT_APP_backUrl}/login`, {method : "post", data : {...formValues}})
-            .then(data => {
-                // console.log(data);
-                if(data){
-                    const {res, msg, result} = data;
-                    console.log(res);
-
-                    // eslint-disable-next-line default-case
-                    switch(res){
-
-                        case "1" :
-                            Login.setLoginUserInfo(result)
-                            Redirect("/Profile");
-                            break;
-                        case "-1" :
-                            
-                            break;
-                        case "-2" :
-                            console.log(Error)
-                            return <Error res={res} msg={msg} />;
-                        case "-3" :
-                            
-                            break;
-                        case "-4" :
-                            return <Error res={res} msg={msg}/>;
-                    
-                    }
-                }
-            })
-
-        } else {
-
-            email = "";
-            psw = "";
-            document.querySelector("#email").className = `${LoginCss.ErrorInput}`;
-            document.querySelector("#psw").className = `${LoginCss.ErrorInput}`;
-            setTimeout(() => {
-                document.querySelector("#email").className = "";
-                document.querySelector("#psw").className = "";
-            },1500)
-            return (
-                <div className={LoginCss.ErrorInCredentials}>
-                    <p>El email o contraseña que has introducido no son correctas, recuerda que la contraseña debe ser:</p>
-                    <ul>
-                        <li>Al menos una letra y un número</li>
-                        <li>No puede contener carácteres alfanuméricos</li>
-                        <li>Contener al menos seis carácteres</li>
-                    </ul>
-
-                </div>
-            );
-        }
-        
-    }
+        fetchData();
+     }
+    
 
     return (
         <div>
@@ -143,22 +58,23 @@ export const Login = () => {
                     placeholder="example@gmail.com"
                     autoComplete="off"
                     value={email}
-                    className="happy-box78"    
-                    onChange={handleInputChange}/>
+                    className="happy-box78"  
+                    onChange={ (e) => setEmail(e.target.value) }
+                   />
                 
                 <br></br>
 
                 <input 
-                    id="psw"
-                    type={type}
-                    name="psw"
+                    id="pwd"
+                    name="pwd"
                     placeholder={placeholder}
                     autoComplete="off"
-                    value={psw}
-                    className="happy-box79"  
-                    onChange={handleInputChange} />
+                    value={ password }
+                    className="happy-box79" 
+                    onChange={ (e) => setPassword(e.target.value) } 
+                     />
                 
-                <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlePswVisibility}></i>
+                {/* <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlepwdVisibility}></i> */}
                 <br></br>
                 <a href="/register" className="usual-link">No recuerdo la contraseña</a>
         <div className="distance">

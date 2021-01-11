@@ -6,7 +6,7 @@ export const useValidator = () => {
         return emailRegex.test(strEmail);
     }
     
-    const validatePsw = (strPsw) => {
+    const validatepwd = (strPsw) => {
         // console.log(strPsw)
         let pswRegex = /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/;
         // console.log("pass", pswRegex.test(strPsw));
@@ -14,11 +14,11 @@ export const useValidator = () => {
     }
     
     const validateCredentials = (strEmail, strPsw) =>{
-        return (validatePsw(strPsw) && validateEmail(strEmail));
+        return (validatepwd(strPsw) && validateEmail(strEmail));
     }
     return {
         validateEmail,
-        validatePsw,
+        validatepwd,
         validateCredentials
     }
 }

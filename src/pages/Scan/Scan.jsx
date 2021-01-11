@@ -3,7 +3,7 @@ import "./Scan.css"
 import  Barcode from "../../components/BarCodeReader/BarCodeReader"
 import NavBar from "../../components/NavBar/NavBar";
 import Back from '../../img/Back.png';
-import Filtro from '../../img/filtro.png';
+
 
 
 function Scan() {
@@ -35,7 +35,7 @@ function Scan() {
               <br/>
               <br/> 
               
-            {/* <Barcode className="prueba"/> */}
+            <Barcode className="prueba"/>
 
             < NavBar />
           </div>       

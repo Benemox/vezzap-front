@@ -1,5 +1,8 @@
-import { createContext } from 'react'
+import {createContext} from "react";
 
-export const LoginContext = createContext({});
-export const LoginProvider = LoginContext.Provider;
-export const LoginConsumer = LoginContext.Consumer;
+export const UserContext = createContext(null);
+
+export const UserProvider = UserContext.Provider;
+export const UserConsumer = UserContext.Consumer;
+
+export default UserContext;
