@@ -12,10 +12,11 @@ function InfoBeer() {
 
      const funcionrotaratras = () => {
         let card = document.querySelectorAll(".card");
-        console.log(card[0].className);
-        card.map(e => {
-            
-        })
+            let items = Array.from(card).map(elem => {
+                if (elem.className === "card center") return elem.setAttribute("class", "card left")
+                if (elem.className === "card right") return elem.setAttribute("class", "card center");
+                if (elem.className === "card left") return elem.setAttribute("class", "card right");
+         })
     }
 
 /*
@@ -44,7 +45,9 @@ function InfoBeer() {
                     <div className="card left"> {/* {this.props.beer.name} */} </div>
                     
                     <div className="card center"> <h3 className="description"> {/*this.props.beer.descr_full*/} </h3> </div>
-                    <div className="card right">  {/* {this.props.beer.image}  */ } </div>
+                    <div className="card right"> 
+                     {/* {this.props.beer.image}  */ } 
+                     </div>
                 
                 </div>
 

@@ -21,7 +21,7 @@ this.props.history.push("/Infobeer");
       
       <InfobeerConsumer>
         { (value) => {
-          console.log(value);
+          ;
           return (
             
       <div className="drawfinderbox" onClick={() => this.gotoBeerinfo(value)}>
