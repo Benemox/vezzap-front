@@ -1,11 +1,11 @@
 body, html{
-  
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_SC;
   margin: 0px;
   height: 716px;
+  width: 375px;
 }
 
 .screen-size {

@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./Profile.css"
 import NavBar from "../../components/NavBar/NavBar"
 import Halfperfil from "../../components/Half-perfil/half-perfil";
@@ -8,6 +8,12 @@ import Settings from '../../img/settings.png';
 import Logout from '../../img/logout.png';
 import Chall from '../../img/chall.png';
 import Friends from '../../img/friends.png';
+import Discount from '../../img/discount.png';
+import Locals from '../../img/locals.png';
+import Myfavbeers from '../../img/myfavbeers.png';
+import Changeimg from '../../img/changeimg.png';
+import Changepass from '../../img/changepass.png';
+import Privacy from '../../img/privacy.png';
 
 
 function Profile() {
@@ -35,9 +41,9 @@ function Profile() {
 
                 <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
 {/* ///////// esto se puede coger para replicar en AJUSTES y hacer una nueva pagina estatica
-                    <div className="" > 
+                    
                                         <img className="logoutimg"  src={Logout} alt="" />
-                    </div>
+                    
    */}                 
 
 
@@ -46,7 +52,18 @@ function Profile() {
                     </div> 
 
                     <div className="challenge-box">
-                    <img  src={Chall} alt="" className="imgchall" /><img  src={Friends} alt="" className="imgchall" />
+                        <img  src={Chall} alt="" className="imgchall" />
+                        <img  src={Friends} alt="" className="imgchall" />
+                        <img  src={Discount} alt="" className="imgchall" />
+                        <img  src={Locals} alt="" className="imgchall" />
+                        <img  src={Myfavbeers} alt="" className="imgchall" />
+                    </div>
+                    
+                    <div>
+                        <img className="logoutimg"  src={Changeimg} alt="" />
+                        <img className="logoutimg"  src={Changepass} alt="" />
+                        <img className="logoutimg"  src={Privacy} alt="" />
+                        <img className="logoutimg"  src={Logout} alt="" />
                     </div>
 
                 <NavBar/>

@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useRedirect } from '../../components/Hooks/useRedirect';
+<<<<<<< HEAD
 import "./login.css"
 
+=======
+import "./login.css";
+>>>>>>> e0b277175a405c1eb82694b2e4a89a28b834187a
 import {Link} from "react-router-dom";
 import logo from '../../img/Frame.png';
 import loginbtn from '../../img/logon.png';

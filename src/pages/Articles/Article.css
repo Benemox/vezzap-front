@@ -1,28 +1,38 @@
-.Art-1{
-    background-image: linear-gradient(to right,#FFF176,#CE8800
-    );
-    width: 375px;
-    border-radius: 0px 0px 10px 10px;
-    margin-bottom: 1px;
+.card-plates{
+    margin: 0px 32px 82px 32px;
+    overflow: hidden;
+    text-align: center;
+    width: 292.3px;
+    height: 533.36px;
+    left: 61.71px;
+    top: 127px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
 }
-.Center{
-    background-image: linear-gradient(to right,#ffffff,#ce1800
-    );
-    font-size: 20px;
-    border-radius: 10px;
+
+.article-fonts{
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #342A21;
+    margin: 5px;
 }
-.img1{
-    border-radius: 10px;
-    shape-image-threshold: 0.5;
-    shape-margin: 20px;
-    float: left;
-    width: 160px;
-    height: 150px;
-}
-.Cen-1{
+
+.center-article{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.NavBarSticky{
-    position : sticky;
-	bottom:0;
+
+.imgmark {
+width: 97.81px;
+height: 107.87px;
+left: 0px;
+top: 0px;
+border-radius: 16px;
+margin-bottom: 16px;
 }
