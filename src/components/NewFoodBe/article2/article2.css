@@ -28,14 +28,7 @@
 .margin99{
     margin: 5px;
     overflow: hidden;
-    
 }
-
-
-a:link, a:visited, a:active {
-    text-decoration:none;
-    color: #512C0A;
-}    
 
 .margin-bold {
 font-family: Noto Sans SC;

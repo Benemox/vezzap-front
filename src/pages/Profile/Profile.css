@@ -78,10 +78,10 @@
 
     .challenge-box{
       width: 376px;
-      height: 222px;
-      
-    }
-
-    .imagechall {
+      height: auto;
       display: flex;
+      align-items: center;
+      flex-direction: column
+      
+      
     }

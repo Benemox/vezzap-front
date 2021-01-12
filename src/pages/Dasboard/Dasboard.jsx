@@ -1,13 +1,13 @@
 import React,{useState} from "react";
-import { Link} from "react-router-dom";
+//import { Link} from "react-router-dom";
 import "./Dasboard.css"
-import GoalsGrid from "../../components/GoalsGrid/GoalsGrid"
+//import GoalsGrid from "../../components/GoalsGrid/GoalsGrid"
 import NavBar from "../../components/NavBar/NavBar"
 import Halfperfil from "../../components/Half-perfil/half-perfil";
 import NewFoodBe from "../../components/NewFoodBe/NewFoodBe"
 function Dasboard() {
     
-   const [Goals] = useState([1,2,3])
+  //const [Goals] = useState([1,2,3])
     let Name = "Eva Maria"
     let Range = 101
     const [chapas] = useState([688])
@@ -18,12 +18,6 @@ function Dasboard() {
       <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
       <h2 className='title-dash'>¿Platos y Cerveza?</h2>
       <NewFoodBe/>    
-      <NewFoodBe/>
-      <NewFoodBe/>
-      <NewFoodBe/>
-      <NewFoodBe/>
-      <NewFoodBe/>
-
       <NavBar/>
 
       </div>
