@@ -13,6 +13,7 @@ class Barcode extends Component {
     }
   }
   resultFinded = () => {
+    
     return this.state.Cervezas
             .map((valor) => {
               console.log(valor)
@@ -23,7 +24,11 @@ class Barcode extends Component {
     return (
       <div ref={this.state.VideoRef} className="imgBuffer" >
         {this.resultFinded()}
+        <div ref={this.state.Cervezas} className="imgBuffer" >
+        {this.resultFinded()}
       </div>
+      </div>
+      
     );
   }
 componentDidMount() {
@@ -66,6 +71,7 @@ if (result.codeResult && result.codeResult.code) {
                   fetch(`http://localhost:8080/ImgoingTohaveLuck/${ean}`)
                   .then(response =>response.json())
                   .then(Data =>{ console.log(Data);
+                 
                   const cervezas = Data.map(beer =>(
                          {
                           name: `${beer.name}`,
@@ -75,15 +81,15 @@ if (result.codeResult && result.codeResult.code) {
                         }
                       ))
                     return cervezas})
-                  .then(cervezas =>  this.setState({
-                    Cervezas :[...cervezas] 
-                }))
+                  .then(cervezas => {
+                    console.log(cervezas)
+                  }
+                    )
                   .catch(error=>console.log(error))
             
             console.log(result.codeResult);
             let img = document.querySelector(".App video");
             let canvas = document.querySelector(".App canvas");
-            console.log(img, canvas);
             canvas.getContext("2d").drawImage(img, 0, 0);
            // Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
             Quagga.offProcessed(qP);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useRedirect } from '../../components/Hooks/useRedirect';
-
+import "./login.css"
 
 import {Link} from "react-router-dom";
 import logo from '../../img/Frame.png';
@@ -26,7 +26,7 @@ export const Login = () => {
         const url = 'http://localhost:8080/login'
          await fetch (url, {            
             method:"POST",
-            //credentials:"include",
+           // credentials:"include",
             headers: {
                 'Content-Type': 'application/json', 
             },
@@ -35,7 +35,6 @@ export const Login = () => {
         .then (data => {
             console.log(data);
             if(data.ok === true){
-               
                 Redirect("/Dasboard")}
         })
 
@@ -67,6 +66,7 @@ export const Login = () => {
                 <input 
                     id="pwd"
                     name="pwd"
+                    type="password"
                     placeholder={placeholder}
                     autoComplete="off"
                     value={ password }

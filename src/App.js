@@ -11,7 +11,7 @@ import login from "./pages/login/login"
 import Article from './pages/Articles/Article';
 import Infobeer from './pages/Infobeer/Infobeer';
 import { InfobeerProvider } from './components/Context/infobeerContext';
-
+import privazyPolicy from "./pages/PrivazyPolicy/privazyPolicy"
 
 
 function App() {
@@ -29,7 +29,7 @@ const [beerInfo,setbeerInfo] = useState(null);
           <Route path="/Scan" component={Scan}/>
           <Route path="/login" component={login} />
           <Route path="/Article" component={Article} />
-
+          <Route path="/privazyPolicy" component={privazyPolicy} />
           <Route path="/Search">
                   <InfobeerProvider value={{beerInfo,setbeerInfo}}>
                     <Search />
