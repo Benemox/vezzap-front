@@ -13,8 +13,7 @@
     height: 392px;
     left: 18.06px;
     top: 69.89px; /* 159 */
-    background-color: red;
-    background: #D9D9D9;
+    background-color: #D9D9D9;;
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 12px;
@@ -28,7 +27,7 @@
     height: 453.36px;
     left: 61.71px;
     top: 37px;
-    background-color: brown;
+    background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 12px;
@@ -42,7 +41,7 @@
     height: 392px;
     left: 112.86px;
     top: 51.69px;
-    background-color: orange;
+    background-color:#F8F8F8;
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 12px;
@@ -70,8 +69,185 @@
     border: 0px;
 }
 
+.center-img{
+    object-fit:cover;
+    height: 158px;
+    width: 113px;
+    border-radius: 8px;
+    margin: 28px 32px 0px 75px;
+}
 
+.center-title{
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
 
+    margin: 5px 32px 0px 32px;
+}
+
+.center-short{
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+    margin: 8px 32px 0px 32px;
+}
+
+.right-title{
+width: 187.75px;
+height: 89.67px;
+font-family: Noto Sans SC;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 46px;
+color: #342A21;
+
+text-align: center;
+
+    margin: 8px 32px 0px 32px;
+}
+.right-full{
+    overflow: hidden;
+    width: 208.81px;
+    height: 171px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #342A21;
+
+    text-align: center;
+
+    margin: 8px 32px 0px 32px;
+}
+.ninja-estilo{
+    width: 121.12px;
+    height: 37.55px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: rgba(81, 44, 10, 0.39);
+}
+.right-estilo{
+    width: 137.19px;
+    height: 37.55px;
+    left: 34.79px;
+    top: 27.86px;
+    
+    /* Display/Bold 20 */
+    
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    
+    /* Secondary/Black */
+    
+    color: #342A21;
+    margin:0px;
+}
+.ninja-origen{
+    width: 121.12px;
+    height: 37.55px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: rgba(81, 44, 10, 0.39);
+    margin:0px;
+}
+.right-origen{
+    width: 137.19px;
+    height: 37.55px;
+    left: 34.79px;
+    top: 27.86px;
+    
+    /* Display/Bold 20 */
+    
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    
+    /* Secondary/Black */
+    
+    color: #342A21;
+    margin:0px;
+}
+.ninja-lupulo{
+    width: 121.12px;
+    height: 37.55px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: rgba(81, 44, 10, 0.39);
+    margin:0px;
+}
+.right-lupulo{
+    width: 137.19px;
+    height: 37.55px;
+    left: 34.79px;
+    top: 27.86px;
+    
+    /* Display/Bold 20 */
+    
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    margin:0px;
+    
+    /* Secondary/Black */
+    
+    color: #342A21;
+}/*
+.right-alcohol{
+    width: 137.19px;
+    height: 37.55px;
+    left: 34.79px;
+    top: 27.86px;
+    
+    
+    
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    
+    
+    color: #342A21;
+}
+.ninja-alcohol{
+    display: flex;
+    justify-content: flex-end;
+    width: 121.12px;
+    height: 37.55px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: rgba(81, 44, 10, 0.39);
+}
+
+*/
 
 
 /* 

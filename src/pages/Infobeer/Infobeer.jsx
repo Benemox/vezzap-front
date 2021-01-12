@@ -42,12 +42,28 @@ function InfoBeer() {
         </div>
 
                 <div className="card-beer">
-                    <div className="card left"> {Beer.beerInfo.name}  </div>
-                    {console.log(Beer.beerInfo.name)}
-                    <div className="card center"> <h3 className="description"> {Beer.descr_full} </h3> </div>
+                    <div className="card left">
+                        <div></div> 
+                        <div></div>
+                        <div></div>   
+                    </div>
+                    
+                    <div className="card center">
+                        <div className=""><img src={Beer.beerInfo.image} alt="" className="center-img" /></div>
+                        <div className="center-title">{Beer.beerInfo.name}</div>
+                        <div className="center-short">{Beer.beerInfo.descr_short}</div>
+                    </div>
+                        
                     <div className="card right"> 
-                     {Beer.image}  
-                     </div>
+                        <div className="right-title">Sobre ella</div>
+                        <div className="right-full">{Beer.beerInfo.descr_full}</div>
+                        <div className="ninja-estilo">Estilo</div>
+                        <div className="right-estilo">{Beer.beerInfo.estilo}</div>
+                        <div className="ninja-origen">Origen</div>
+                        <div className="right-origen">{Beer.beerInfo.origen}</div>
+
+                        
+                    </div>
                 
                 </div>
         <div className="Vboth">
@@ -63,3 +79,17 @@ function InfoBeer() {
 export default InfoBeer;
 
 //<NavLink to="/faq" activeStyle={{ fontWeight: "bold", color: "red" }}></NavLink> para las bolas blancas :)
+// {Beer.beerInfo.name}
+// {Beer.beerInfo.color}
+// {Beer.beerInfo.origen}
+// {Beer.beerInfo.lupulos}
+// {Beer.beerInfo.estilo}
+// {Beer.beerInfo.descr_short}
+// {Beer.beerInfo.descr_full}
+// {Beer.beerInfo.porcentaje_alcohol}
+// {Beer.beerInfo.image}
+
+{/* <div className="ninja-lupulo">Lupulos</div>
+                        <div className="right-lupulo">{Beer.beerInfo.lupulos}</div>
+                        <div className="right-alcohol">{Beer.beerInfo.porcentaje_alcohol}</div>
+                        <div className="ninja-alcohol">Alc.</div> */}
