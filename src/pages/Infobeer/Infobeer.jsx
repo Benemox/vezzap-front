@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import './Infobeer.css';
 import Back from '../../img/Back.png';
 import Vecleft from '../../img/Vectorleft.png';
@@ -50,10 +50,10 @@ function InfoBeer() {
                      </div>
                 
                 </div>
-<div className="Vboth">
+        <div className="Vboth">
                 <div className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </div>
                 <div className="Vright" onClick={funcionrotaradelante}> <img src={Vecright} alt="" /> </div>
-</div>
+        </div>
                 <NavBar/>
     </div>
     
@@ -61,3 +61,5 @@ function InfoBeer() {
 }
 
 export default InfoBeer;
+
+//<NavLink to="/faq" activeStyle={{ fontWeight: "bold", color: "red" }}></NavLink> para las bolas blancas :)
