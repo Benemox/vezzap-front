@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,} from "react";
 //import { Link } from "react-router-dom";
 import "./Profile.css"
 import NavBar from "../../components/NavBar/NavBar"
@@ -14,15 +14,20 @@ import Myfavbeers from '../../img/myfavbeers.png';
 import Changeimg from '../../img/changeimg.png';
 import Changepass from '../../img/changepass.png';
 import Privacy from '../../img/privacy.png';
+import { useHistory } from "react-router-dom";
+
 
 
 function Profile() {
-   
+   const history =useHistory()
     let Name = "Eva Maria"
     let Range = 101
     const [chapas] = useState([688])
     const [expertise]= useState(["Experta Cervecera"])
-    
+    const redirect = () => {
+        history.push('/privazyPolicy')
+        
+      }
   return (
     
       <div className="screen-white screen-size">
@@ -62,7 +67,7 @@ function Profile() {
                     <div>
                         <img className="logoutimg"  src={Changeimg} alt="" />
                         <img className="logoutimg"  src={Changepass} alt="" />
-                        <img className="logoutimg"  src={Privacy} alt="" />
+                        <img className="logoutimg"  src={Privacy} alt="" onClick={redirect}/>
                         <img className="logoutimg"  src={Logout} alt="" />
                     </div>
 
