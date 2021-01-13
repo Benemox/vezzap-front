@@ -11,7 +11,7 @@ function Article() {
   return (
     <div className="screen-size screen-back center-article">
         <div  className="card-plates">
-            <h2>Guisos de carne con frutas pasas, productos ahumados o quesos ahumados</h2>
+            <h2>Guisos de carne con frutas pasas o ahumados.</h2>
          
                 <div className="article-fonts">  
                 <h3>  Saca el Vezzapiano que llevas dentro y queda como el mejor anfitrión con estas

@@ -9,7 +9,7 @@ import foto from "../../../img/picture3.jpg"
             <div className="rectangule-n1" >
                  <img src={foto} alt="foto maridaje1" className="img-n2"/>
                 <div className="rectangule-n3">
-                    <p className="margin-bold">Quesos azules y carnes</p>
+                    <p className="margin-bold">Quesos y carnes</p>
                     <p className="margin99">La American IPA más imprescindible que marida a la perfección con multitud de platos.</p>    
                  </div>
              

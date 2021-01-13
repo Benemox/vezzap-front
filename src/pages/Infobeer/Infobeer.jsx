@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import './Infobeer.css';
 import Back from '../../img/Back.png';
 import Vecleft from '../../img/Vectorleft.png';
@@ -41,23 +41,66 @@ function InfoBeer() {
             </Link>
         </div>
 
-                <div className="card-beer">
-                    <div className="card left"> {Beer.beerInfo.name}  </div>
-                    {console.log(Beer.beerInfo.name)}
-                    <div className="card center"> <h3 className="description"> {Beer.descr_full} </h3> </div>
-                    <div className="card right"> 
-                     {Beer.image}  
-                     </div>
-                
+        <div className="card-beer">
+                <div className="card left">
+                     <div className="left-idea">Ideal con...</div> 
+                     <div className="left-maridaje"></div>
+                    <div className="left-maridaje"></div>
+                    <div className="left-maridaje"></div>   
                 </div>
-<div className="Vboth">
-                <div className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </div>
-                <div className="Vright" onClick={funcionrotaradelante}> <img src={Vecright} alt="" /> </div>
-</div>
-                <NavBar/>
+                    
+                        <div className="card center">
+                                <div className=""><img src={Beer.beerInfo.image} alt="" className="center-img" /></div>
+                                <div className="center-title">{Beer.beerInfo.name}</div>
+                                <div className="center-short">{Beer.beerInfo.descr_short}</div>
+                        </div>
+                        
+                <div className="card right"> 
+                        <div className="right-title">Sobre ella</div>
+                        <div className="right-full">{Beer.beerInfo.descr_full}</div>
+                
+                            <div className="boxone">
+                                    <div className="right-shadow">Fermentacion</div>
+                                    <div className="right-text">{Beer.beerInfo.fermentacion}</div>
+                            </div>
+                            <div className="boxone">        
+                                    <div className="right-shadow">Malta</div>
+                                    <div className="right-text">{Beer.beerInfo.maltas}</div>
+                            </div>
+                    <div className="boxtwo">
+                        <div className="boxhalf">
+                                <div className="right-shadow-half-left">IBU</div>
+                                <div className="right-text-half-left">{Beer.beerInfo.ibu}</div>
+                        </div>
+                        <div className="boxhalf">
+                                <div className="right-alcohol-half-right">{Beer.beerInfo.porcentaje_alcohol}</div>
+                                <div className="right-shadow-half-right">Alc.</div>
+                        </div>
+                    </div>    
+                </div>
+                
+        </div>
+
+
+                    <div className="Vboth">
+                            <div className="Vleft" onClick={funcionrotaratras}> <img src={Vecleft} alt="" /> </div>
+                            <div className="Vright" onClick={funcionrotaradelante}> <img src={Vecright} alt="" /> </div>
+                    </div>
+            <NavBar/>
     </div>
     
   );
 }
 
 export default InfoBeer;
+
+//<NavLink to="/faq" activeStyle={{ fontWeight: "bold", color: "red" }}></NavLink> para las bolas blancas :)
+// {Beer.beerInfo.name}
+// {Beer.beerInfo.color}
+// {Beer.beerInfo.ibu}
+// {Beer.beerInfo.maltas}
+// {Beer.beerInfo.fermentacion}
+// {Beer.beerInfo.descr_short}
+// {Beer.beerInfo.descr_full}
+// {Beer.beerInfo.porcentaje_alcohol}
+// {Beer.beerInfo.image}

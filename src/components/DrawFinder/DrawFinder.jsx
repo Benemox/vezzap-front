@@ -27,7 +27,7 @@ this.props.history.push("/Infobeer");
       <div className="drawfinderbox" onClick={() => this.gotoBeerinfo(value)}>
               <img className="imgDrawbeer" src={prueba} alt="" /> 
               <div className="beername"> <h2> {this.props.beer.name} </h2> </div>
-              <div className="descrip-beer"> <h3 className="description"> {this.props.beer.descr_full} </h3> </div> 
+              <div className="descrip-beer"> <h3 className="description"> {this.props.beer.descr_short} </h3> </div> 
       
       </div>
           );

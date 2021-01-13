@@ -30,7 +30,12 @@ body, html{
 
 @font-face {
   font-family: Noto_Sans_SC;
-  src: url(../src/fonts/Noto_Sans_SC/OFL.txt);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Black.otf);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Bold.otf);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Light.otf);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Medium.otf);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Regular.otf);
+  src: url(../src/fonts/Noto_Sans_SC/NotoSansSC-Thin.otf);
   }
 
 .screen-white {
