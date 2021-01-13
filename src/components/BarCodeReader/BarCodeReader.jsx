@@ -4,30 +4,44 @@ import DrawFinder from '../DrawFinder/DrawFinder'
 import React, { Component } from 'react';
 
 import { useRedirect } from '../../components/Hooks/useRedirect';
+import { InfobeerConsumer } from "../Context/infobeerContext";
 class Barcode extends Component {
   constructor() {
     super();
     this.state = {
       VideoRef: React.createRef(),
-      Cervezas : []
+      result : false,
+      Beer: []
     }
   }
-  resultFinded = () => {
-    
-    return this.state.Cervezas
+  resultFinded = (setbeerInfo) => {
+    if(this.state.result){
+      
+       return this.state.Beer
             .map((valor) => {
               console.log(valor)
-             return <DrawFinder beer={valor} />
+             return (<div>
+               <DrawFinder beer={valor} />
+               <button onClick={()=>window.location.reload()}>Reiniciar</button>
+               </div>
+               )
             });
+               
+               
+    }
+   
   }
   render() {
-    return (
-      <div ref={this.state.VideoRef} className="imgBuffer" >
-        {this.resultFinded()}
-        <div ref={this.state.Cervezas} className="imgBuffer" >
-        {this.resultFinded()}
-      </div>
-      </div>
+    return (<InfobeerConsumer>
+      {(value)=>{
+        return (
+        <div ref={this.state.VideoRef} className="imgBuffer" >
+                {this.resultFinded(value.setbeerInfo)}
+
+        </div>)
+      }}
+    </InfobeerConsumer>
+      
       
     );
   }
@@ -42,7 +56,7 @@ componentDidMount() {
       decoder: {
         readers: ["ean_reader"]
       }
-    }, function (err) {
+    },  (err) =>{
       if (err) {
         console.log(err);
         return
@@ -82,6 +96,7 @@ if (result.codeResult && result.codeResult.code) {
                       ))
                     return cervezas})
                   .then(cervezas => {
+                    this.setState({result:true,Beer:cervezas})
                     console.log(cervezas)
                   }
                     )
