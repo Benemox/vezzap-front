@@ -69,6 +69,39 @@
     border: 0px;
 }
 
+.left-idea{
+    width:221px;
+    height: 49px;
+    text-align: center;
+    margin: 0px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 29px 0px 17px 21px;
+    color: #342A21;
+}
+
+.left-maridaje{
+    width: 230px;
+    height: 89px;
+    left: 11px;
+    top: 0px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: 0px 11px 16px 11px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .center-img{
     object-fit:cover;
     height: 158px;
@@ -78,7 +111,7 @@
 }
 
 .center-title{
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -89,7 +122,7 @@
 }
 
 .center-short{
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -100,146 +133,42 @@
 }
 
 .right-title{
-width: 187.75px;
-height: 89.67px;
-font-family: Noto Sans SC;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 46px;
-color: #342A21;
-
-text-align: center;
-
-    margin: 8px 32px 0px 32px;
+    width: 187.75px;
+    height: 89.67px;
+    font-family: Noto_Sans_SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: #342A21;
+    text-align: center;
+    margin: 0px 32px 0px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right-full{
     overflow: hidden;
     width: 208.81px;
     height: 171px;
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 19px;
     color: #342A21;
-
     text-align: center;
+    margin: 0px 32px 0px 32px;
+}
 
-    margin: 8px 32px 0px 32px;
+.boxone{
+    width: 223px;
+    height: 63px;
+    margin: 0px 15px 0px 15px;
 }
-.ninja-estilo{
-    width: 121.12px;
-    height: 37.55px;
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 46px;
-    color: rgba(81, 44, 10, 0.39);
-}
-.right-estilo{
-    width: 137.19px;
-    height: 37.55px;
-    left: 34.79px;
-    top: 27.86px;
-    
-    /* Display/Bold 20 */
-    
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    
-    /* Secondary/Black */
-    
-    color: #342A21;
-    margin:0px;
-}
-.ninja-origen{
-    width: 121.12px;
-    height: 37.55px;
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 46px;
-    color: rgba(81, 44, 10, 0.39);
-    margin:0px;
-}
-.right-origen{
-    width: 137.19px;
-    height: 37.55px;
-    left: 34.79px;
-    top: 27.86px;
-    
-    /* Display/Bold 20 */
-    
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    
-    /* Secondary/Black */
-    
-    color: #342A21;
-    margin:0px;
-}
-.ninja-lupulo{
-    width: 121.12px;
-    height: 37.55px;
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 46px;
-    color: rgba(81, 44, 10, 0.39);
-    margin:0px;
-}
-.right-lupulo{
-    width: 137.19px;
-    height: 37.55px;
-    left: 34.79px;
-    top: 27.86px;
-    
-    /* Display/Bold 20 */
-    
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    margin:0px;
-    
-    /* Secondary/Black */
-    
-    color: #342A21;
-}/*
-.right-alcohol{
-    width: 137.19px;
-    height: 37.55px;
-    left: 34.79px;
-    top: 27.86px;
-    
-    
-    
-    font-family: Noto Sans SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    
-    
-    color: #342A21;
-}
-.ninja-alcohol{
-    display: flex;
-    justify-content: flex-end;
-    width: 121.12px;
-    height: 37.55px;
-    font-family: Noto Sans SC;
+
+.right-shadow{
+    font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -247,7 +176,56 @@ text-align: center;
     color: rgba(81, 44, 10, 0.39);
 }
 
-*/
+.right-text{
+    font-family: Noto_Sans_SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #342A21;
+}
+
+.boxtwo{
+    width: 223px;
+    height: 63px;
+    margin: 0px 15px 0px 15px;
+    display: inline-block;
+}
+
+.boxhalf{
+    width: 111px;
+    height: 63px;
+    margin: 0px 0px 0px 0px;
+}
+
+.right-shadow-half-left{
+
+}
+
+.right-text-half-left{
+
+}
+
+.right-alcohol-half-right{
+
+}
+
+.right-shadow-half-right{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 

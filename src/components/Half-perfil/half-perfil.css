@@ -25,7 +25,7 @@
   }
 
   .rectangle-2p{
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -34,7 +34,7 @@
     text-align: right;
   }
   .rectangle-c3po{
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;
 font-style: normal;
 font-weight: bold;
 font-size: 16px;
@@ -51,7 +51,7 @@ margin: 0px 36px 0 0;
     height:50px
 }
 .rectangle-3p{
-font-family: Noto Sans SC;
+font-family: Noto_Sans_SC;
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
@@ -60,14 +60,14 @@ text-align: center;
 margin:0px;
 }
 .rectangle-3p1{
-font-family: Noto Sans SC;
+font-family: Noto_Sans_SC;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 20px;
 text-align: center;
 margin:0px;
-margin-top:-20px;
+margin-top:-10px;
 }
 
 
