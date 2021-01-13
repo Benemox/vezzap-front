@@ -14,8 +14,8 @@ function Scan() {
 
           <div className="title2">
               <div className="backimg">
-                    <img  src={Back} alt="" />
-              </div>
+                    {/* <img  src={Back} alt="" /> */}
+    </div>
               <div className="searchtitle">      
                 <p className="toptitle">Escanear</p>
               </div>    

@@ -63,9 +63,9 @@ render(){
               <div className="searchtitle">      
                 <p className="toptitle">Buscar</p>
               </div>      
-              <div className="filtroimg" > 
+              {/* <div className="filtroimg" > 
                     <img  src={Filtro} alt="" />
-              </div>
+              </div> */}
           </div>
       <Finder ph={"  Busca tu cerveza aquí!"} mb={this.miBuscador} />
     

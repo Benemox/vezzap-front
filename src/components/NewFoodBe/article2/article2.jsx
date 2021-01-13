@@ -10,7 +10,7 @@ import foto from "../../../img/picture2.jpg"
                  <img src={foto} alt="foto maridaje1" className="img-n2"/>
                 <div className="rectangule-n3">
                     <p className="margin-bold">Guisos de carne</p>
-                    <p className="margin99"> Franzsikaner Dunkel Weissbier es una cerveza sensual para disfrutar durante las comidas prolongadas.</p>    
+                    <p className="margin99"> Franzsikaner Dunkel Weissbier es una cerveza sensual para disfrutar durante las comidas.</p>    
                  </div>
              
             </div>

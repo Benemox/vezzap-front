@@ -3,6 +3,8 @@ import { BrowserRouter as Redirect} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./RegisterPage.css"
 import registerbtn from '../../img/register.png';
+import {Link, NavLink} from "react-router-dom";
+import Back from '../../img/Back.png';
 
 function RegisterPage() {
       
@@ -28,6 +30,11 @@ function RegisterPage() {
 
   return (
     <div className="screen-size screen-back">
+      <Link to="/login" >
+                                <div className="backimg2">
+                                        <img  src={Back} alt="" />
+                                </div>
+            </Link>
         {redirected && <Redirect to={redirected}/> }
         
             <form action="" id='form-reg-1' onSubmit={handleSubmit(onSubmit)}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useRedirect } from '../../components/Hooks/useRedirect';
 import "./login.css";
 import {Link} from "react-router-dom";
-import logo from '../../img/Frame.png';
+import Brand from '../../img/vlogo.png';
 import loginbtn from '../../img/logon.png';
 import vesapbtn from '../../img/boton1.png';
 //import {UserProvider, userProvider} from "../../components/Context/LoginContext"
@@ -47,7 +47,7 @@ export const Login = () => {
 
     return (
         <div>
-            <img src={logo} alt="a" className="frame"/>
+            <img className="brand frame" src={Brand} alt="a" />
             <form onSubmit={handleSubmit} className="screen-size screen-back Container42">
             
                 <input 
@@ -73,7 +73,7 @@ export const Login = () => {
                     onChange={ (e) => setPassword(e.target.value) } 
                      />
                 
-                {/* <i id={LoginCss.eye} className="fas fa-eye" onClick={HandlepwdVisibility}></i> */}
+                
                 <br></br>
                 <a href="/register" className="usual-link">No recuerdo la contraseña</a>
         <div className="distance">

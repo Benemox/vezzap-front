@@ -6,28 +6,63 @@ import Vecleft from '../../img/Vectorleft.png';
 import Vecright from '../../img/Vectorright.png';
 import infobeerContext from "../../components/Context/infobeerContext";
 import NavBar from "../../components/NavBar/NavBar"
+import mar1 from "../../img/mar1.png";
+import mar2 from "../../img/mar2.png";
+import mar3 from "../../img/mar3.png";
 
 function InfoBeer() {
 
     const Beer = useContext(infobeerContext);
-    //const Data = Beer.InfoBeer
-    console.log(Beer);
 
      const funcionrotaratras = () => {
         let card = document.querySelectorAll(".card");
+        
             let items = Array.from(card).map(elem => {
-                if (elem.className === "card center") return elem.setAttribute("class", "card left")
-                if (elem.className === "card right") return elem.setAttribute("class", "card center");
-                if (elem.className === "card left") return elem.setAttribute("class", "card right");
+                
+                if (elem.className === "card center") {
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos invisible");
+                        return elem.setAttribute("class", "card left");
+                } 
+                if (elem.className === "card right") {
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos visible");
+                        return elem.setAttribute("class", "card center");
+                }
+
+                 if (elem.className === "card left") { 
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos invisible");
+                        return elem.setAttribute("class", "card right");
+
+                }
+       
          })
     }
 
     const funcionrotaradelante = () => {
         let card = document.querySelectorAll(".card");
             let items = Array.from(card).map(elem => {
-                if (elem.className === "card center") return elem.setAttribute("class", "card right")
-                if (elem.className === "card right") return elem.setAttribute("class", "card left");
-                if (elem.className === "card left") return elem.setAttribute("class", "card center");
+
+
+                if (elem.className === "card center") {
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos invisible");
+                        return elem.setAttribute("class", "card right");
+                } 
+                if (elem.className === "card right") {
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos invisible");
+                 return elem.setAttribute("class", "card left");
+                }
+
+                 if (elem.className === "card left") { 
+                        let e = document.getElementById("dosid")
+                        e.setAttribute("class","card dos visible");
+                        return elem.setAttribute("class", "card center");
+
+                }
+
          })
     }
 
@@ -44,9 +79,9 @@ function InfoBeer() {
         <div className="card-beer">
                 <div className="card left">
                      <div className="left-idea">Ideal con...</div> 
-                     <div className="left-maridaje"></div>
-                    <div className="left-maridaje"></div>
-                    <div className="left-maridaje"></div>   
+                     <div className="left-maridaje"><img src={mar1} alt="" className="mar-content" /></div>
+                    <div className="left-maridaje"><img src={mar2} alt="" className="mar-content" /></div>
+                    <div className="left-maridaje"><img src={mar3} alt="" className="mar-content" /></div>   
                 </div>
                     
                         <div className="card center">
@@ -61,19 +96,19 @@ function InfoBeer() {
                 
                             <div className="boxone">
                                     <div className="right-shadow">Fermentacion</div>
-                                    <div className="right-text">{Beer.beerInfo.fermentacion}</div>
+                                    <div className="right-text">{Beer.beerInfo.maltas}</div>
                             </div>
                             <div className="boxone">        
                                     <div className="right-shadow">Malta</div>
-                                    <div className="right-text">{Beer.beerInfo.maltas}</div>
+                                    <div className="right-text">{Beer.beerInfo.fermentacion}</div>
                             </div>
-                    <div className="boxtwo">
+                    <div id ="dosid" className="card dos invisible">
                         <div className="boxhalf">
                                 <div className="right-shadow-half-left">IBU</div>
                                 <div className="right-text-half-left">{Beer.beerInfo.ibu}</div>
                         </div>
                         <div className="boxhalf">
-                                <div className="right-alcohol-half-right">{Beer.beerInfo.porcentaje_alcohol}</div>
+                                <div className="right-text-half-right">{Beer.beerInfo.porcentaje_alcohol}%</div>
                                 <div className="right-shadow-half-right">Alc.</div>
                         </div>
                     </div>    
@@ -95,12 +130,3 @@ function InfoBeer() {
 export default InfoBeer;
 
 //<NavLink to="/faq" activeStyle={{ fontWeight: "bold", color: "red" }}></NavLink> para las bolas blancas :)
-// {Beer.beerInfo.name}
-// {Beer.beerInfo.color}
-// {Beer.beerInfo.ibu}
-// {Beer.beerInfo.maltas}
-// {Beer.beerInfo.fermentacion}
-// {Beer.beerInfo.descr_short}
-// {Beer.beerInfo.descr_full}
-// {Beer.beerInfo.porcentaje_alcohol}
-// {Beer.beerInfo.image}

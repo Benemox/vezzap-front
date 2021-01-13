@@ -10,7 +10,7 @@ import foto from "../../../img/picture4.jpg"
                  <img src={foto} alt="foto maridaje1" className="img-n2"/>
                 <div className="rectangule-n3">
                     <p className="margin-bold">Mariscos y quesos</p>
-                    <p className="margin99"> De gran influencia alemana, combina perfectamente con cualquier marisco. Exitoso maridaje con quesos suaves.</p>    
+                    <p className="margin99"> De gran influencia alemana, combina perfectamente con cualquier marisco.</p>    
                  </div>
              
             </div>

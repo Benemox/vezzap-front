@@ -22,11 +22,11 @@
 .margin99{
     margin: 5px;
     overflow: hidden;
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 20px;
     color: #512C0A;
 }
 
@@ -36,7 +36,7 @@ a:link, a:visited, a:active {
 }    
 
 .margin-bold {
-font-family: Noto Sans SC;
+font-family: Noto_Sans_SC;;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;

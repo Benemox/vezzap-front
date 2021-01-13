@@ -80,7 +80,7 @@ margin-top:-10px;
     align-items: flex-end; 
     height:90px;
 
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;;
 font-style: normal;
 font-weight: 500;
 font-size: 13px;
@@ -97,7 +97,7 @@ line-height: 19px;
 }
 .margin{
     margin: 2.3px;
-    font-family: Noto Sans SC;
+    font-family: Noto_Sans_SC;;
 font-style: normal;
 font-weight: 500;
 font-size: 13px;

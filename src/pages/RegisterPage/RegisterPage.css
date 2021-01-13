@@ -2,6 +2,17 @@
 border: none;
   }
 
+.backimg2 {
+    position: absolute;
+    width: 70px;
+    height: 78px;
+    float: left;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inputform {
 padding: 7px 8px;
 position: static;
@@ -42,8 +53,8 @@ line-height: 46.34px;
 font-style: normal;
 align-items: center;
 color: #512C0A;
-margin-top: 36px;
-margin-bottom: 60px;
+margin-top: 56px;
+margin-bottom: 40px;
 }
 
 .hola {
