@@ -58,19 +58,19 @@ render(){
   <div className="screen-size screen-search backeternal">
           <div className="title">
               <div className="backimg">
-                    {/* <img  src={Back} alt="" /> */}
+                     <img  src={Back} alt="" /> 
               </div>
               <div className="searchtitle">      
                 <p className="toptitle">Buscar</p>
               </div>      
-              {/* <div className="filtroimg" > 
+               <div className="filtroimg" > 
                     <img  src={Filtro} alt="" />
-              </div> */}
+              </div>
           </div>
       <Finder ph={"  Busca tu cerveza aquí!"} mb={this.miBuscador} />
-    
-      {this.pintarTareas()}{/*this.getNoticias()*/}
-
+  <div className="chall3">
+      {this.pintarTareas()}
+  </div>
       <NavBar />
   </div>
   );

@@ -59,7 +59,7 @@ function Profile() {
                         <img  src={Myfavbeers} alt="" className="imgchall" />
                     </div>
                     
-                    <div>
+                    <div className="challen">
                         <img className="logoutimg"  src={Changeimg} alt="" />
                         <img className="logoutimg"  src={Changepass} alt="" />
                         <img className="logoutimg"  src={Privacy} alt="" />

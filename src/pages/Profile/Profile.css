@@ -81,7 +81,13 @@
       height: auto;
       display: flex;
       align-items: center;
-      flex-direction: column
+      flex-direction: column;
+      margin-top: 80px;
       
-      
+    }
+
+    .challen{
+      width: 376px;
+      height: 280px; /* lvl-100*/
+      margin-bottom: 80px;
     }

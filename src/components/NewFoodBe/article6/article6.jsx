@@ -10,7 +10,7 @@ import foto from "../../../img/picture6.jpg"
                  <img src={foto} alt="foto maridaje1" className="img-n2"/>
                 <div className="rectangule-n3">
                     <p className="margin-bold">Quesos curados</p>
-                    <p className="margin99">Leffe Brune es una cerveza robusta, por lo que acompaña muy bien con productos intensos como los quesos curados.</p>    
+                    <p className="margin99">Leffe Brune es una cerveza robusta, por lo que acompaña muy bien con productos intensos.</p>    
                  </div>
              
             </div>

@@ -5,6 +5,8 @@
     height: 220px;
     border-radius: 0px 0px 0px 0px;
     margin-bottom: 1px;
+    position: fixed;
+    top: 0px;
   }
 
   .profile69{

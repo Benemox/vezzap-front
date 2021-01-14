@@ -14,7 +14,9 @@ function Dasboard() {
       <div className="screen-white screen-size">
       <Halfperfil name={Name} range={Range} chapas={chapas} expertise={expertise}/>
       <h2 className='title-dash'>¿Platos y Cerveza?</h2>
-      <NewFoodBe/>    
+          <div className="contain44">
+              <NewFoodBe/>    
+          </div>
       <NavBar/>
 
       </div>

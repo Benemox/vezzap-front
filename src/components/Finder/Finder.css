@@ -1,6 +1,10 @@
 .finderbox {
     width: 375px;
     height: 78px;
+    top:78px;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFF5DF;
 }
 
 .inputbox {

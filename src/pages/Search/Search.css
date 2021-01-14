@@ -2,7 +2,13 @@
   width: 375px;
   height: 78px;
   margin: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: #FFF5DF;
+
 }
+
 .backimg{
 width: 70px;
 height: 78px;
@@ -38,4 +44,10 @@ margin: 0px;
   }
   .backeternal{
     background: #FFF5DF;
+  }
+
+  .chall3 {
+    margin-top: 310px;
+    z-index:0;
+    background-color: #FFF5DF;
   }

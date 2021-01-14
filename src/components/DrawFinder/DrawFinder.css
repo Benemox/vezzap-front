@@ -3,8 +3,12 @@
     height: 158px;
     margin: 0px 0px 12.5px 12.5px;
     background-color:  #FFF5DF;
+    top: 156px;
+    z-index: 0;
 
 }
+
+
 
 .beername {
     overflow: hidden;
