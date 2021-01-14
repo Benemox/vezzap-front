@@ -11,8 +11,8 @@ import login from "./pages/login/login"
 import Article from './pages/Articles/Article';
 import Infobeer from './pages/Infobeer/Infobeer';
 import { InfobeerProvider } from './components/Context/infobeerContext';
-
-
+import privazyPolicy from "./pages/PrivazyPolicy/privazyPolicy"
+import ResMap from "./pages/Map/Map"
 
 function App() {
 
@@ -26,10 +26,15 @@ const [beerInfo,setbeerInfo] = useState(null);
           <Route path="/register" component={RegisterPage} />
           <Route path="/dasboard" component={Dasboard}/>
           <Route path="/Profile" component={Profile} />
-          <Route path="/Scan" component={Scan}/>
+          <Route exact path="/map" component={ResMap} />
+          <Route path="/Scan" >
+          <     InfobeerProvider value={{beerInfo,setbeerInfo}}>
+                  <Scan />
+                </InfobeerProvider>
+          </Route>
           <Route path="/login" component={login} />
           <Route path="/Article" component={Article} />
-
+          <Route path="/privazyPolicy" component={privazyPolicy} />
           <Route path="/Search">
                   <InfobeerProvider value={{beerInfo,setbeerInfo}}>
                     <Search />

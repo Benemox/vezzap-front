@@ -1,0 +1,11 @@
+.nonedisplay{
+  diplay:none
+}
+.yesdisplay{
+  display:flex;
+  background-color: green;
+}
+.nodisplay{
+  display: flex;
+  background-color: red;
+}

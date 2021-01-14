@@ -1,0 +1,40 @@
+.Art-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,#FFF176,#CE8800
+    );
+    width: 375px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 1px;
+    
+    font-size: 8px;
+}
+.Art-1 h1{
+    font-size: 10px;
+}
+.img1{
+    border-radius: 10px;
+    shape-image-threshold: 0.5;
+    shape-margin: 20px;
+    float: left;
+    width: 160px;
+    height: 150px;
+}
+.b12{
+    margin-bottom: 50px;
+    
+}
+.b12 p{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.NavBarSticky{
+    position : sticky;
+	bottom:0;
+}

@@ -33,7 +33,7 @@ class Search extends Component {
     .then(response =>response.json())
     .then(Data =>{
       const cervezas = Data
-      console.log(Data);
+      // console.log(Data);
       return cervezas})
     .then(cervezas => this.setState({cervezas}))
     .catch(error=>console.log(error))
@@ -44,9 +44,11 @@ class Search extends Component {
   pintarTareas = () => {
     return this.state.cervezas
             .filter((cerveza) => {
+              console.log(cerveza.keys)
               return cerveza.name.toLowerCase().includes(this.state.buscando.toLowerCase())
             })
             .map((valor) => {
+              
              return <DrawFinder beer={valor} />
             });
   }

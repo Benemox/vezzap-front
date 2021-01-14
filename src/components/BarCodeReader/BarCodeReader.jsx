@@ -4,26 +4,45 @@ import DrawFinder from '../DrawFinder/DrawFinder'
 import React, { Component } from 'react';
 
 import { useRedirect } from '../../components/Hooks/useRedirect';
+import { InfobeerConsumer } from "../Context/infobeerContext";
 class Barcode extends Component {
   constructor() {
     super();
     this.state = {
       VideoRef: React.createRef(),
-      Cervezas : []
+      result : false,
+      Beer: []
     }
   }
-  resultFinded = () => {
-    return this.state.Cervezas
+  resultFinded = (setbeerInfo) => {
+    if(this.state.result){
+      
+       return this.state.Beer
             .map((valor) => {
               console.log(valor)
-             return <DrawFinder beer={valor} />
+             return (<div>
+               <DrawFinder beer={valor} />
+               <button onClick={()=>window.location.reload()}>Reiniciar</button>
+               </div>
+               )
             });
+               
+               
+    }
+   
   }
   render() {
-    return (
-      <div ref={this.state.VideoRef} className="imgBuffer" >
-        {this.resultFinded()}
-      </div>
+    return (<InfobeerConsumer>
+      {(value)=>{
+        return (
+        <div ref={this.state.VideoRef} className="imgBuffer" >
+                {this.resultFinded(value.setbeerInfo)}
+
+        </div>)
+      }}
+    </InfobeerConsumer>
+      
+      
     );
   }
 componentDidMount() {
@@ -37,7 +56,7 @@ componentDidMount() {
       decoder: {
         readers: ["ean_reader"]
       }
-    }, function (err) {
+    },  (err) =>{
       if (err) {
         console.log(err);
         return
@@ -66,6 +85,7 @@ if (result.codeResult && result.codeResult.code) {
                   fetch(`http://localhost:8080/ImgoingTohaveLuck/${ean}`)
                   .then(response =>response.json())
                   .then(Data =>{ console.log(Data);
+                 
                   const cervezas = Data.map(beer =>(
                          {
                           name: `${beer.name}`,
@@ -75,15 +95,16 @@ if (result.codeResult && result.codeResult.code) {
                         }
                       ))
                     return cervezas})
-                  .then(cervezas =>  this.setState({
-                    Cervezas :[...cervezas] 
-                }))
+                  .then(cervezas => {
+                    this.setState({result:true,Beer:cervezas})
+                    console.log(cervezas)
+                  }
+                    )
                   .catch(error=>console.log(error))
             
             console.log(result.codeResult);
             let img = document.querySelector(".App video");
             let canvas = document.querySelector(".App canvas");
-            console.log(img, canvas);
             canvas.getContext("2d").drawImage(img, 0, 0);
            // Quagga.ImageDebug.drawPath(result.box, { x: 0, y: 1 }, drawingCtx, { color: "#00F", lineWidth: 2 });
             Quagga.offProcessed(qP);
