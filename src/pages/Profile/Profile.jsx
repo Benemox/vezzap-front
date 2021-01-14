@@ -29,7 +29,7 @@ function Profile() {
 
                     <div className="title3">
                                 <div className="backimg">
-                                        <img  src={Back} alt="" />
+                                        {/* <img  src={Back} alt="" /> */}
                                 </div>
                                 <div className="searchtitle">      
                                     <p className="toptitle">Tu perfil</p>

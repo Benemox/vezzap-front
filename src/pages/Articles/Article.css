@@ -1,31 +1,47 @@
 .card-plates{
-    margin: 0px 32px 82px 32px;
     overflow: hidden;
     text-align: center;
-    width: 292.3px;
-    height: 533.36px;
-    left: 61.71px;
-    top: 127px;
+    width:328px;
+    height: 518px;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 4px -2px 23px rgba(81, 44, 10, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 12px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.img-arti{
+    width: 235px;
+    height: 123px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.backimg2 {
+    position: absolute;
+    width: 70px;
+    height: 78px;
+    float: left;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .article-fonts{
+    overflow: hidden;
     font-family: Noto_Sans_SC;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 19px;
     color: #342A21;
-    margin: 5px;
-}
-
-.center-article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 270px;
+    height: 200px;
 }
 
 .imgmark {
@@ -35,4 +51,15 @@ left: 0px;
 top: 0px;
 border-radius: 16px;
 margin-bottom: 16px;
+}
+
+.title-arti{font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    
+    /* Secondary/Black */
+    
+    color: #342A21;
 }

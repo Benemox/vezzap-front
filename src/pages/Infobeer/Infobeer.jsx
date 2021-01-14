@@ -79,9 +79,10 @@ function InfoBeer() {
         <div className="card-beer">
                 <div className="card left">
                      <div className="left-idea">Ideal con...</div> 
-                     <div className="left-maridaje"><img src={mar1} alt="" className="mar-content" /></div>
-                    <div className="left-maridaje"><img src={mar2} alt="" className="mar-content" /></div>
-                    <div className="left-maridaje"><img src={mar3} alt="" className="mar-content" /></div>   
+                     <Link to="/Article" >  <div className="left-maridaje"><img src={mar1} alt="" className="mar-content" /></div></Link> 
+                     <Link to="/Article" ><div className="left-maridaje"><img src={mar2} alt="" className="mar-content" /></div></Link> 
+                     <Link to="/Article" ><div className="left-maridaje"><img src={mar3} alt="" className="mar-content" /></div></Link>   
+                    
                 </div>
                     
                         <div className="card center">

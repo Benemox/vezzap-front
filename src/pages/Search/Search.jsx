@@ -55,10 +55,10 @@ render(){
 
   return (
 // dentro de la primera etiqueta html q ya convierte el resto en JSX dentro no se puede poner un comentario :)
-  <div className="screen-size screen-search">
+  <div className="screen-size screen-search backeternal">
           <div className="title">
               <div className="backimg">
-                    <img  src={Back} alt="" />
+                    {/* <img  src={Back} alt="" /> */}
               </div>
               <div className="searchtitle">      
                 <p className="toptitle">Buscar</p>
